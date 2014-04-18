@@ -18,3 +18,8 @@ router.get('/apply', function(req, res) {
 router.post('/apply', function(req, res) {
   res.send('You applied. Good work');
 })
+
+
+router.get('/test', function(req, res){
+  res.send('hh is a test')
+})
