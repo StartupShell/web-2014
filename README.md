@@ -1,5 +1,10 @@
-clone the repo
+## Local Set Up
 
-run gulp watch in one terminal
+    git clone this_repo
+    cd this_repo
+    npm install
+    gulp watch
 
-run node app.js in another and you're good to go
+then, in a new terminal window
+
+    node app.js
