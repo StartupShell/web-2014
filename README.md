@@ -3,8 +3,7 @@
     git clone this_repo
     cd this_repo
     npm install
-    gulp watch
-
-then, in a new terminal window
-
-    node app.js
+    gulp
+    
+    
+    go to localhost:3000 in your browser
