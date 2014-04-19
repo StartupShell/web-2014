@@ -2,6 +2,9 @@ var gulp =  require('gulp');
 var sass = require('gulp-ruby-sass');
 var nodemon = require('gulp-nodemon');
 var watch = require('gulp-watch');
+
+
+
 gulp.task('jackstrap', function() {
   return gulp.src('public/jackstrap/sass/jackstrap.scss')
     .pipe(sass({sourcemap: true}))
@@ -21,8 +24,20 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('public/stylesheets/'))
 })
 
+
 gulp.task('watch', function(){
   gulp.watch('public/**/*.scss',['sass']);
-
   gulp.watch('public/jackstrap/sass/**/*.scss',['jackstrap']);
+})
+
+
+gulp.task('nodemon', function(){
+  nodemon({
+    script: 'app.js'
+  })
+})
+
+
+gulp.task('default',['watch', 'nodemon'], function(){
+  console.log('werking');
 })

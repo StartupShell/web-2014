@@ -1052,7 +1052,5 @@ h6 {
 @media print {
   .hidden-print {
     display: none !important; } }
-body {
-  color: black; }
 
 /*# sourceMappingURL=jackstrap.css.map */
