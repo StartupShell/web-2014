@@ -6,14 +6,14 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.0.0",
-    "cookie-parser": "~1.0.1",
-    "debug": "~0.7.4",
-    "express": "~4.0.0",
-    "jade": "~1.3.0",
-    "morgan": "~1.0.0",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "*",
+    "jade": "*",
+    "morgan": "*",
     "node-sass": "*",
-    "static-favicon": "~1.0.0",
+    "static-favicon": "*",
     "lodash":"*"
   },
   "devDependencies":{
