@@ -3,35 +3,43 @@ $gray: #666666;
 
 
 $bold: 700;
-
-
+body{
+  font-size:100%;
+}
 .home{
-  
+
+  height: 60rem;
+  padding-top: 14rem;
+
+
   color: white;
 
   h1{
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 8rem;
   }
-  
+
+  p {
+    font-size: 2.5rem;
+  }
+
   @include bg-image('images/bg1.jpg');
 
 }
 
 
 h2.heading{
-  font-size:3.5em;
-  color: $gray;
+  font-size:5rem;
   border-bottom:1px #eeeeee solid;
   text-transform: uppercase;
   font-weight: $bold; 
 }
-
-
-
-
-
-
+p{
+  font-size: 1.8rem;  
+}
+.logo{
+  padding: 0em;
+}
 
 .text-center{
   text-align: center;

@@ -194,10 +194,10 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Titillium Web", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: black;
+  color: #666666;
   background-color: white; }
 
 input,
@@ -248,13 +248,13 @@ hr {
     clear: both; }
   @media (min-width: 768px) {
     .container {
-      width: 530px; } }
+      width: 610px; } }
   @media (min-width: 992px) {
     .container {
-      width: 750px; } }
+      width: 790px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 990px; } }
+      width: 950px; } }
 
 .container-fluid {
   margin-right: auto;
