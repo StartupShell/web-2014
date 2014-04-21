@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AACE,WAAE;;EAEA,cAAc,EAAE,SAAS;EACzB,SAAS,EAAE,GAAG;;AAIlB,YAAY;EACV,UAAU,EAAE,MAAM",
-"sources": ["main.scss"],
+"mappings": "AAOA,KAAK;EAEH,KAAK,EAAE,KAAK;ECRZ,UAAU,EAAE,sDAAkD;EAC9D,uBAAuB,EAAE,KAAK;EAC9B,oBAAoB,EAAE,KAAK;EAC3B,kBAAkB,EAAE,KAAK;EACzB,eAAe,EAAE,KAAK;EDMtB,QAAE;IACA,cAAc,EAAE,SAAS;IACzB,SAAS,EAAE,GAAG;;AAQlB,UAAU;EACR,SAAS,EAAC,KAAK;EACf,KAAK,EAtBA,OAAO;EAuBZ,aAAa,EAAC,iBAAiB;EAC/B,cAAc,EAAE,SAAS;EACzB,WAAW,EAtBN,GAAG;;AA+BV,YAAY;EACV,UAAU,EAAE,MAAM",
+"sources": ["main.scss","../../../../../../Users/jackson/Dropbox/dev/shell/web/public/sass/mixins.scss"],
 "names": [],
 "file": "main.css"
 }

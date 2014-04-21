@@ -1,16 +1,18 @@
 extends layout
 
 block content
-  .container
-    .row
-      .col-sm-8.col-sm-offset-2
-        .callout.text-center
-          h1 Think. Build. Play
+  .home
+    .container
+      .row
+        .col-sm-10.col-sm-offset-1.text-center
+          h1 Think. Build. Play.
           p.
             Startup Shell is a student-run nonprofit incubator 
             that fosters entrepreneurship through collaboration 
             at the University of Maryland. These 
             people are building something great.
+
+  .container
     .row
       .col-sm-12
         .about
@@ -23,11 +25,16 @@ block content
             in events.
           p.
             More stuff goes here
+
     .row
       .col-sm-12
         .ventures
           h2.heading Ventures
-          p Images everywhere...
+          .text-center
+            each img in images
+              img(src='images/logos/'+img)
+
+
     .row
       .col-sm-12
         .row
@@ -39,6 +46,7 @@ block content
             .news
               h2.heading News
               p News goes here
+
     .row
       .col-sm-12
         .membership
@@ -57,6 +65,14 @@ block content
             li Mentorship from entrepreneurial professionals
             li Dedicated desk and workstation space plus storage
             li Subscriptions to various web products
+
     .row
       .col-sm-12
         button.apply Big Ol' Apply Button
+
+
+
+
+
+
+
