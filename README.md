@@ -7,3 +7,6 @@
     
     
     go to localhost:3000 in your browser
+
+
+    make sure to update node and npm.....brent
