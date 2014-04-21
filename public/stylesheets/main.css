@@ -1,9 +1,4 @@
-body {
-  font-size: 100%; }
-
 .home {
-  height: 60rem;
-  padding-top: 14rem;
   color: white;
   background: url("../images/bg1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -12,21 +7,21 @@ body {
   background-size: cover; }
   .home h1 {
     text-transform: uppercase;
-    font-size: 8rem; }
-  .home p {
-    font-size: 2.5rem; }
+    font-size: 5em; }
 
 h2.heading {
-  font-size: 5rem;
+  font-size: 3.5em;
+  color: #666666;
   border-bottom: 1px #eeeeee solid;
   text-transform: uppercase;
   font-weight: 700; }
 
-p {
-  font-size: 1.8rem; }
-
 .logo {
-  padding: 0em; }
+  opacity: .8;
+  padding-right: 1rem;
+  padding-top: 1rem; }
+  .logo:hover {
+    opacity: 1; }
 
 .text-center {
   text-align: center; }

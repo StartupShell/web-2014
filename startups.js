@@ -10,7 +10,6 @@ module.exports = {startups: [
 ["http://daocloud.com", "logo_daocloud.png", "Daocloud"],
 ["http://emsengage.com", "logo_emsengage.png", "EMS Engage"],
 ["http://shopevlove.com", "logo_evlove.png", "Evlove"],
-["http://facetoaster.com", "logo_facetoaster.png", "Facetoaster"],
 ["http://foodrecoverynetwork.org", "logo_frn.png", "Food Recovery Network"],
 ["http://gatorfeet.com", "logo_gatorfeet.png", "Gator Feet"],
 ["http://hiddenumd.weebly.com", "logo_hiddenumd.png", "Hidden UMD"],
