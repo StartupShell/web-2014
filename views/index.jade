@@ -32,7 +32,8 @@ block content
           h2.heading Ventures
           .text-center
             each img in images
-              img.logo(src='images/logos/'+img)
+              a(href="#{img[0]}")
+                img.logo(src='/images/logos/'+'#{img[1]}')
 
     .row
       .col-sm-12

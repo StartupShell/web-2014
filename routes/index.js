@@ -1,13 +1,15 @@
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
+var startups = require('./../startups');
+var _ = require('lodash');
 module.exports = router;
 
 
 
 // Home page
 router.get('/', function(req, res) {
-  res.render('index',  {images: fs.readdirSync('./public/images/logos') });
+  res.render('index',  {images: _.shuffle(startups.startups) });
 });
 
 
