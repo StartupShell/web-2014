@@ -32,16 +32,21 @@ p {
 
 
 // HEADER
-
+.shell-logo{
+  padding-top: .8rem;
+}
 .header {
   width: 100%;
-  height: 8rem;
+  padding:.8rem;
+
+  height: 6rem;
   background-color: $light-gray;
   position: fixed;
   z-index: 100;
   -moz-box-shadow:    0 -.125rem .5rem .25rem rgba(0,0,0,.25);
   -webkit-box-shadow: 0 -.125rem .5rem .25rem rgba(0,0,0,.25);
   box-shadow:         0 -.125rem .5rem .25rem rgba(0,0,0,.25);
+  
 }
 
 
@@ -90,7 +95,7 @@ video#bgvid {
   background: white;
 }
 
-.logo {
+.startup {
   opacity: .8;
   &:hover {
     opacity: 1;
@@ -117,7 +122,9 @@ input {
   font-weight: 400;
 }
 
-
+.red{
+  color: $red;
+}
 
 // FANCY STYLEZ
 
