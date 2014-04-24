@@ -5,7 +5,19 @@ block content
     .container
       .row
         .col-sm-12
-          p startup shell
+          .row
+            .col-sm-1
+              img.shell-logo(src='/images/logo.svg')
+            .col-sm-2.hidden-xs.hidden-sm
+              a(href="#"): p startup shell
+            .col-sm-1.col-sm-offset-5
+              a(href="#"): p about
+            .col-sm-1
+              a(href="#"): p ventures
+            .col-sm-1
+              a(href="#"): p connect
+            .col-sm-1
+              a.red(href="#"): p apply
   .video-container
     .overlay
     <video autoplay loop poster="/images/timelapse.jpg" id="bgvid"><source src="/images/timelapse.webm" type="video/webm"><source src="/images/timelapse.mp4" type="video/mp4"><source src="/images/timelapse.ogv" type="video/ogv"></video>
@@ -41,7 +53,7 @@ block content
             .text-center
               each img in images
                 a(href="#{img[0]}")
-                  img.logo(src='/images/logos/'+'#{img[1]}')
+                  img.startup(src='/images/logos/'+'#{img[1]}')
 
       .row
         .col-sm-12

@@ -23,9 +23,13 @@ h3 {
 p {
   margin: 1rem 0; }
 
+.shell-logo {
+  padding-top: .8rem; }
+
 .header {
   width: 100%;
-  height: 8rem;
+  padding: .8rem;
+  height: 6rem;
   background-color: #eeeeee;
   position: fixed;
   z-index: 100;
@@ -69,11 +73,11 @@ video#bgvid {
 .content {
   background: white; }
 
-.logo {
+.startup {
   opacity: .8;
   padding-right: 1rem;
   padding-top: 1rem; }
-  .logo:hover {
+  .startup:hover {
     opacity: 1; }
 
 button {
@@ -85,6 +89,9 @@ button {
 input {
   font-family: "Titillium Web";
   font-weight: 400; }
+
+.red {
+  color: #dd6666; }
 
 ::-moz-selection {
   background: #dd6666;
