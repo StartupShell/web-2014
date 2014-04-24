@@ -4,13 +4,28 @@
 
 h1 {
   font-size: 5em;
-  color: @red;
+  color: $red;
   text-transform: uppercase;
   margin: .5em 0;
   line-height: 1;
 }
 
+
+
+
+
+// Styles
+
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: $light-gray;
+  position: fixed;
+  m
+}
+
 .home {
+  margin-top: 20rem;
   @include bg-image('images/timelapse.jpg');
   height: 50rem;
   color: white;

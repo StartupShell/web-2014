@@ -195,7 +195,7 @@ html {
 
 body {
   font-family: "Titillium Web", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #666666;
   background-color: white; }
@@ -231,8 +231,8 @@ img {
   height: auto; }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
   border: 0;
   border-top: 1px solid black; }
 
@@ -907,22 +907,22 @@ hr {
   .col-lg-offset-12 {
     margin-left: 100%; } }
 h1 {
-  font-size: 36px; }
+  font-size: 41px; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 34px; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 28px; }
 
 h4 {
-  font-size: 18px; }
+  font-size: 20px; }
 
 h5 {
-  font-size: 14px; }
+  font-size: 16px; }
 
 h6 {
-  font-size: 12px; }
+  font-size: 14px; }
 
 .clearfix:before, .clearfix:after {
   content: " ";
@@ -1052,5 +1052,3 @@ h6 {
 @media print {
   .hidden-print {
     display: none !important; } }
-
-/*# sourceMappingURL=jackstrap.css.map */
