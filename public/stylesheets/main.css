@@ -9,7 +9,7 @@ h1 {
   line-height: 1; }
 
 h2 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   color: #666666;
   border-bottom: 1px #eeeeee solid;
   text-transform: uppercase;
@@ -34,10 +34,9 @@ p {
   box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25); }
 
 .feature {
-  min-height: 55rem;
   max-height: 680px;
   color: white;
-  padding: 15rem 0; }
+  padding: 10vw 0; }
   .feature p {
     font-size: 2rem;
     max-width: 80%;

@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   color: $gray;
   border-bottom: 1px $light-gray solid;
   text-transform: uppercase;
@@ -48,10 +48,9 @@ p {
 // FEATURE
 
 .feature {
-  min-height: 55rem;
   max-height: 680px;
   color: white;
-  padding: 15rem 0;
+  padding: 10vw 0;
   p {
     font-size: 2rem;
     max-width: 80%;
