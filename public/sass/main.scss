@@ -35,10 +35,13 @@ p {
 
 .header {
   width: 100%;
-  height: 5rem;
+  height: 8rem;
   background-color: $light-gray;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
+  -moz-box-shadow:    0 -.125rem .5rem .25rem rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 -.125rem .5rem .25rem rgba(0,0,0,.25);
+  box-shadow:         0 -.125rem .5rem .25rem rgba(0,0,0,.25);
 }
 
 
@@ -46,6 +49,7 @@ p {
 
 .feature {
   min-height: 55rem;
+  max-height: 680px;
   color: white;
   padding: 15rem 0;
   p {
@@ -65,11 +69,21 @@ p {
   z-index: -100;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: linear-gradient(rgba(221,102,102,.5), rgba(221,102,102,.5)), rgba(0,0,0,0.25);
+}
+
 video#bgvid {
   position: absolute; 
   z-index:0;
   min-width: 100%;
-  background:url(timelapse.jpg);
+  background:url(/images/timelapse.jpg);
 }
 
 .content {
