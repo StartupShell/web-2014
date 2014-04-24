@@ -9,14 +9,20 @@ html {
 
 // TYPOGRAPHY
 
+<<<<<<< HEAD
 h1.heading {
   font-size: 5rem;
+=======
+h1 {
+  font-size: 5em;
+>>>>>>> fbc6362e05b95d1e5bd24cf58b41a36c9aa64ac7
   color: $red;
   text-transform: uppercase;
   margin: .5em 0;
   line-height: 1;
 }
 
+<<<<<<< HEAD
 h2.heading {
   font-size:3.5rem;
   color: $gray;
@@ -38,8 +44,24 @@ p {
 
 
 // SECTIONS
+=======
+
+
+
+
+// Styles
+
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: $light-gray;
+  position: fixed;
+  m
+}
+>>>>>>> fbc6362e05b95d1e5bd24cf58b41a36c9aa64ac7
 
 .home {
+  margin-top: 20rem;
   @include bg-image('images/timelapse.jpg');
   height: 50rem;
   color: white;
