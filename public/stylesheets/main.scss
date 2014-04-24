@@ -1,14 +1,43 @@
 @import 'mixins';
 
+// LAYOUT
+
+html {
+  overflow-y: scroll;
+}
+
+
 // TYPOGRAPHY
 
-h1 {
-  font-size: 5em;
-  color: @red;
+h1.heading {
+  font-size: 5rem;
+  color: $red;
   text-transform: uppercase;
   margin: .5em 0;
   line-height: 1;
 }
+
+h2.heading {
+  font-size:3.5rem;
+  color: $gray;
+  border-bottom: 1px $light-gray solid;
+  text-transform: uppercase;
+  font-weight: $bold;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: $gray;
+  line-height: 1.25;
+
+}
+
+p {
+  margin: 1rem 0;
+}
+
+
+// SECTIONS
 
 .home {
   @include bg-image('images/timelapse.jpg');
@@ -18,16 +47,6 @@ h1 {
     text-transform: uppercase;
     font-size: 5em;
   } 
-}
-
-
-
-h2.heading {
-  font-size:3.5em;
-  color: $gray;
-  border-bottom:1px $light-gray solid;
-  text-transform: uppercase;
-  font-weight: $bold; 
 }
 
 .logo {
@@ -45,7 +64,16 @@ h2.heading {
 }
 
 
-/* FACNY STYLEZ */
+// FORMS & INPUTS
+
+input {
+  font-family: @titillium;
+  font-weight: 400;
+}
+
+
+
+// FANCY STYLEZ
 
 ::-moz-selection {
     background: $red;
