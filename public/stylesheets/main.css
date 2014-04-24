@@ -1,5 +1,12 @@
+h1 {
+  font-size: 5em;
+  color: #dd6666;
+  text-transform: uppercase;
+  margin: .5em 0;
+  line-height: 1; }
+
 .home {
-  background: url("../images/bg1.jpg") no-repeat center center fixed;
+  background: url("../images/timelapse.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,4 +34,13 @@ h2.heading {
 .text-center {
   text-align: center; }
 
-/*# sourceMappingURL=main.css.map */
+/* FACNY STYLEZ */
+::-moz-selection {
+  background: #dd6666;
+  color: white;
+  text-shadow: none; }
+
+::selection {
+  background: #dd6666;
+  color: white;
+  text-shadow: none; }

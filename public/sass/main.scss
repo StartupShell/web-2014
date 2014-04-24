@@ -1,28 +1,38 @@
 @import 'mixins';
-$gray: #666666;
-$bold: 700;
 
-.home{
-  @include bg-image('images/bg1.jpg');
+// TYPOGRAPHY
+
+h1 {
+  font-size: 5em;
+  color: $red;
+  text-transform: uppercase;
+  margin: .5em 0;
+  line-height: 1;
+}
+
+.home {
+  @include bg-image('images/timelapse.jpg');
   height: 50rem;
   color: white;
-  h1{
+  h1 {
     text-transform: uppercase;
     font-size: 5em;
   } 
 }
 
-h2.heading{
+
+
+h2.heading {
   font-size:3.5em;
   color: $gray;
-  border-bottom:1px #eeeeee solid;
+  border-bottom:1px $light-gray solid;
   text-transform: uppercase;
   font-weight: $bold; 
 }
 
-.logo{
+.logo {
   opacity: .8;
-  &:hover{
+  &:hover {
     opacity: 1;
   }
   padding-right: 1rem;
@@ -30,6 +40,22 @@ h2.heading{
 
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
+
+
+/* FACNY STYLEZ */
+
+::-moz-selection {
+    background: $red;
+    color: $white;
+    text-shadow: none;
+}
+
+::selection {
+    background: $red;
+    color: $white;
+    text-shadow: none;
+}
+

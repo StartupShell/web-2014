@@ -1,4 +1,23 @@
-@mixin bg-image($imageURL){
+// COLORS
+
+$red: #dd6666;
+
+$gray: #666666;
+$light-gray: #eeeeee;
+$mid-gray: #999999;
+
+$white: #ffffff;
+$black: #000000;
+
+
+// TYPOGRAPHY
+
+$bold: 700;
+
+
+// IMAGES
+
+@mixin bg-image($imageURL) {
   background: url('../'+$imageURL) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
