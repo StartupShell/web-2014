@@ -2,7 +2,14 @@
 $gray: #666666;
 $bold: 700;
 
+
+.header{
+  
+}
+
+
 .home{
+
   @include bg-image('images/bg1.jpg');
   height: 50rem;
   color: white;

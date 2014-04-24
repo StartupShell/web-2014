@@ -10,20 +10,20 @@ module.exports = router;
 
 // Home page
 router.get('/', function(req, res) {
-var id = '7qvrobfs0js5799ebugodgc5go%40group.calendar.google.com';
-var results = 4;
-var url = 'http://www.google.com/calendar/feeds/'+
-		id+'/public/full?alt=json&orderby=starttime&max-results='+
-		results+'&singleevents=true&sortorder=ascending&futureevents=true';
+// var id = '7qvrobfs0js5799ebugodgc5go%40group.calendar.google.com';
+// var results = 4;
+// var url = 'http://www.google.com/calendar/feeds/'+
+// 		id+'/public/full?alt=json&orderby=starttime&max-results='+
+// 		results+'&singleevents=true&sortorder=ascending&futureevents=true';
 
 
 
 
-	request(url,function(err, res, body) {
-		
-	})
+	// request(url,function(err, response, body) {
+	// 	console.log(body)
+	// })
+	
 	res.render('index',  {images: _.shuffle(startups.startups) });
-
 
 });
 

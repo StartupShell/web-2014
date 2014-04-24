@@ -7,7 +7,7 @@ var watch = require('gulp-watch');
 
 gulp.task('jackstrap', function() {
   return gulp.src('public/jackstrap/sass/jackstrap.scss')
-    .pipe(sass({sourcemap: true}))
+    .pipe(sass())
     .on('error', function(err) {
       console.log(err);
     })
@@ -17,7 +17,7 @@ gulp.task('jackstrap', function() {
 
 gulp.task('sass', function() {
   return gulp.src('public/sass/main.scss')
-    .pipe(sass({sourcemap: true}))
+    .pipe(sass())
     .on('error', function(err) {
       console.log(err);
     })
