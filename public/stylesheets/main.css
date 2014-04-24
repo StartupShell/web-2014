@@ -1,10 +1,11 @@
 .home {
-  color: white;
   background: url("../images/bg1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  height: 50rem;
+  color: white; }
   .home h1 {
     text-transform: uppercase;
     font-size: 5em; }

@@ -6,17 +6,16 @@ $bold: 700;
 
 
 .home{
-  
+  @include bg-image('images/bg1.jpg');
+  height: 50rem;
   color: white;
-
   h1{
     text-transform: uppercase;
     font-size: 5em;
-  }
-  
-  @include bg-image('images/bg1.jpg');
-
+  } 
 }
+
+
 
 
 h2.heading{
