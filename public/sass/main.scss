@@ -1,9 +1,6 @@
 @import 'mixins';
 $gray: #666666;
-
-
 $bold: 700;
-
 
 .home{
   @include bg-image('images/bg1.jpg');
@@ -15,9 +12,6 @@ $bold: 700;
   } 
 }
 
-
-
-
 h2.heading{
   font-size:3.5em;
   color: $gray;
@@ -25,8 +19,6 @@ h2.heading{
   text-transform: uppercase;
   font-weight: $bold; 
 }
-
-
 
 .logo{
   opacity: .8;
@@ -37,8 +29,6 @@ h2.heading{
   padding-top: 1rem;
 
 }
-
-
 
 .text-center{
   text-align: center;

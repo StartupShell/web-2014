@@ -11,15 +11,16 @@
     "debug": "*",
     "express": "*",
     "jade": "*",
+    "lodash": "*",
     "morgan": "*",
     "node-sass": "*",
-    "static-favicon": "*",
-    "lodash":"*"
+    "request": "^2.34.0",
+    "static-favicon": "*"
   },
-  "devDependencies":{
-    "gulp":"*",
-    "gulp-nodemon":"*",
-    "gulp-ruby-sass":"*",
-    "gulp-watch":"*"
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-nodemon": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-watch": "*"
   }
 }
