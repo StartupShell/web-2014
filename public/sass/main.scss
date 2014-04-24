@@ -9,16 +9,16 @@ html {
 
 // TYPOGRAPHY
 
-h1.heading {
-  font-size: 5rem;
-  color: $red;
+h1 {
+  font-size: 10rem;
+  color: $white;
   text-transform: uppercase;
   margin: .5em 0;
   line-height: 1;
 }
 
-h2.heading {
-  font-size:3.5rem;
+h2 {
+  font-size: 6rem;
   color: $gray;
   border-bottom: 1px $light-gray solid;
   text-transform: uppercase;

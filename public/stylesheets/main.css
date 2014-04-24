@@ -1,15 +1,15 @@
 html {
   overflow-y: scroll; }
 
-h1.heading {
-  font-size: 5rem;
-  color: #dd6666;
+h1 {
+  font-size: 10rem;
+  color: white;
   text-transform: uppercase;
   margin: .5em 0;
   line-height: 1; }
 
-h2.heading {
-  font-size: 3.5rem;
+h2 {
+  font-size: 6rem;
   color: #666666;
   border-bottom: 1px #eeeeee solid;
   text-transform: uppercase;
