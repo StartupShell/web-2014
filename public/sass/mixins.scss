@@ -17,6 +17,13 @@ $titillium: 'Titillium Web';
 $bold: 700;
 
 
+// LAYOUT
+
+.text-center {
+  text-align: center;
+}
+
+
 // IMAGES
 
 @mixin bg-image($imageURL) {

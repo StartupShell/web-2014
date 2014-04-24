@@ -6,73 +6,73 @@ block content
       .row
         .col-sm-12
           p startup shell
-  .home
+  .video-container
+    <video autoplay loop poster="/images/timelapse.jpg" id="bgvid"><source src="/images/timelapse.mp4" type="video/mp4"><source src="/images/timelapse.webm" type="video/webm"></video>
+  .feature
     .container
       .row
-        .col-sm-10.col-sm-offset-1.text-center
-          h1.heading Think. Build. Play.
+        .col-sm-12.text-center
+          h1 Think. Build. Play.
           p.
             Startup Shell is a student-run nonprofit incubator 
             that fosters entrepreneurship through collaboration 
             at the University of Maryland. These 
             people are building something great.
+  .content
+    .container
+      .row
+        .col-sm-12
+          .about
+            h2 Incubator + Coworking Space
+            p.
+              Our students are absolutely crazy. With different backgrounds, 
+              experience levels, skills, and interests, members bring a 
+              lot to the table for collaboration and knowledge sharing.
+              Get in on the action by applying for membership or participating
+              in events.
+            p.
+              More stuff goes here
 
-  .container
-    .row
-      .col-sm-12
-        .about
-          h2.heading Incubator + Coworking Space
-          p.
-            Our students are absolutely crazy. With different backgrounds, 
-            experience levels, skills, and interests, members bring a 
-            lot to the table for collaboration and knowledge sharing.
-            Get in on the action by applying for membership or participating
-            in events.
-          p.
-            More stuff goes here
+      .row
+        .col-sm-12
+          .ventures
+            h2 Ventures
+            .text-center
+              each img in images
+                a(href="#{img[0]}")
+                  img.logo(src='/images/logos/'+'#{img[1]}')
 
-    .row
-      .col-sm-12
-        .ventures
-          h2.heading Ventures
-          .text-center
-            each img in images
-              a(href="#{img[0]}")
-                img.logo(src='/images/logos/'+'#{img[1]}')
+      .row
+        .col-sm-12
+          .row
+            .col-sm-6
+              .events
+                h2 Events
+                p events go here
+            .col-sm-6
+              .news
+                h2 News
+                p News goes here
 
-    .row
-      .col-sm-12
-        .row
-          .col-sm-6
-            .events
-              h2.heading Events
-              p events go here
-          .col-sm-6
-            .news
-              h2.heading News
-              p News goes here
+      .row
+        .col-sm-12
+          .membership
+            h2 Membership
+            p.
+              Join cool people making cool things in the Shell.
+              We are looking for people who can contribute on multiple 
+              levels: individual, project, organization, and community.
+              While we have many ways to engage otherwise, membership
+              has specific perks and resources to push your project
+              to the next level including:
+            ul
+              li 24-hour swipe access to our decked-out coworking space
+              li Prototyping tools including 3D printer and electronics device lab
+              li Funding opportunities and investor interactions
+              li Mentorship from entrepreneurial professionals
+              li Dedicated desk and workstation space plus storage
+              li Subscriptions to various web products
 
-    .row
-      .col-sm-12
-        .membership
-          h2.heading Membership
-          p.
-            Join cool people making cool things in the Shell.
-            We are looking for people who can contribute on multiple 
-            levels: individual, project, organization, and community.
-            While we have many ways to engage otherwise, membership
-            has specific perks and resources to push your project
-            to the next level including:
-          ul
-            li 24-hour swipe access to our decked-out coworking space
-            li Prototyping tools including 3D printer and electronics device lab
-            li Funding opportunities and investor interactions
-            li Mentorship from entrepreneurial professionals
-            li Dedicated desk and workstation space plus storage
-            li Subscriptions to various web products
-
-    .row
-      .col-sm-12
-        button.apply Big Ol' Apply Button
-
-
+      .row
+        .col-sm-12
+          button.apply Big Ol' Apply Button

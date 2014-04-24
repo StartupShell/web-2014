@@ -1,5 +1,5 @@
-html {
-  overflow-y: scroll; }
+.text-center {
+  text-align: center; }
 
 h1 {
   font-size: 10rem;
@@ -9,7 +9,7 @@ h1 {
   line-height: 1; }
 
 h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #666666;
   border-bottom: 1px #eeeeee solid;
   text-transform: uppercase;
@@ -30,19 +30,32 @@ p {
   position: fixed;
   z-index: 10; }
 
-.home {
-  z-index: -1;
-  background: url("../images/timelapse.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 55rem;
-  color: white; }
-  .home h1 {
-    margin-top: 15rem;
-    text-transform: uppercase;
-    font-size: 5em; }
+.feature {
+  min-height: 55rem;
+  color: white;
+  padding: 15rem 0; }
+  .feature p {
+    font-size: 2rem;
+    max-width: 80%;
+    margin: 0 auto; }
+
+.video-container {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  z-index: -100; }
+
+video#bgvid {
+  position: absolute;
+  z-index: 0;
+  min-width: 100%;
+  background: url(timelapse.jpg); }
+
+.content {
+  background: white; }
 
 .logo {
   opacity: .8;
@@ -51,8 +64,11 @@ p {
   .logo:hover {
     opacity: 1; }
 
-.text-center {
-  text-align: center; }
+button {
+  background: #dd6666;
+  color: white; }
+  button:hover {
+    color: #eeeeee; }
 
 input {
   font-family: "Titillium Web";
