@@ -18,6 +18,7 @@ h2 {
   border-bottom: 1px $light-gray solid;
   text-transform: uppercase;
   font-weight: $bold;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -137,20 +138,29 @@ video#bgvid {
 
 // BUTTON
 
-button.apply {
+button {
   background: $red;
   color: $white;
   outline: none;
   border: none;
-  padding: 40px;
+  padding: 5px;
   text-transform: uppercase;
   font-weight: $bold;
-  font-size: 3rem;
-  width: 100%;
   &:hover {
-    color: $light-gray;
+    background: lighten($red,5%);
   }
 }
+
+button.apply {
+  padding: 40px;
+  font-size: 3rem;
+  width: 100%;
+}
+
+button.talk {
+  width: 50%;
+}
+
 
 // EVENTS
 
@@ -183,20 +193,6 @@ button.apply {
 
 .eventContent{
   color: $gray;
-}
-
-button.talk {
-  background: $red;
-  color: $white;
-  outline: none;
-  border: none;
-  padding: 5px;
-  text-transform: uppercase;
-  font-weight: $bold;
-  width: 50%;
-  &:hover {
-    color: $light-gray;
-  }
 }
 
 

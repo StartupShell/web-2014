@@ -14,7 +14,8 @@ h2 {
   color: #666666;
   border-bottom: 1px #eeeeee solid;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: 20px; }
 
 h3 {
   font-size: 1.75rem;
@@ -102,18 +103,24 @@ video#bgvid {
   .startup:hover {
     opacity: 1; }
 
-button.apply {
+button {
   background: #dd6666;
   color: white;
   outline: none;
   border: none;
-  padding: 40px;
+  padding: 5px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 700; }
+  button:hover {
+    background: #e27b7b; }
+
+button.apply {
+  padding: 40px;
   font-size: 3rem;
   width: 100%; }
-  button.apply:hover {
-    color: #eeeeee; }
+
+button.talk {
+  width: 50%; }
 
 .events {
   margin-bottom: 1.7rem; }
@@ -130,18 +137,6 @@ button.apply {
 
 .eventContent {
   color: #666666; }
-
-button.talk {
-  background: #dd6666;
-  color: white;
-  outline: none;
-  border: none;
-  padding: 5px;
-  text-transform: uppercase;
-  font-weight: 700;
-  width: 50%; }
-  button.talk:hover {
-    color: #eeeeee; }
 
 input {
   background-color: #666666;
