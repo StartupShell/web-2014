@@ -36,7 +36,9 @@ p {
 .full p {
   display: inline-block;
   font-size: 16px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  margin-top: -.1rem;
+  line-height: 2.3; }
 
 .shell-logo {
   padding-top: .8rem; }
