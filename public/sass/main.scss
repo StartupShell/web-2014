@@ -152,6 +152,38 @@ button.apply {
   }
 }
 
+.events{
+  a{
+    text-decoration: none;
+    &:hover{
+      h3{
+        color: lighten($red, 8%);
+      }
+    }
+  }
+  h3{
+    color: $red;
+    font-size: 2.5rem;
+    font-weight: $bold;
+  }
+  margin-bottom: 1.7rem;
+}
+
+.startTime{
+  color: $red;
+  font-weight: 300;
+}
+
+.where{
+
+}
+
+.eventContent{
+  color: $gray;
+}
+
+
+
 
 // FORMS & INPUTS
 

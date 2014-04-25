@@ -104,7 +104,11 @@ video#bgvid {
 .subscribe{
   border-bottom: 1px solid $light-gray;
   .row{
+<<<<<<< HEAD
+    padding:1rem;
+=======
     padding: 1rem;
+>>>>>>> 0d88e79950f40229a6fccfb41d1d221866606171
   }
 }
 
@@ -146,6 +150,34 @@ button.apply {
     color: $light-gray;
   }
 }
+
+.events{
+  a{
+    text-decoration: none;
+    &:hover{
+      color: darken(15%);
+    }
+  }
+  h3{
+    color: $red;
+    font-size: 2.5rem;
+  }
+}
+
+.startTime{
+  color: $red;
+  font-weight: 300;
+}
+
+.where{
+
+}
+
+.eventContent{
+
+}
+
+
 
 
 // FORMS & INPUTS
