@@ -9,6 +9,7 @@ h1 {
   text-transform: uppercase;
   margin: .5em 0;
   line-height: 1;
+  font-weight: $bold;
 }
 
 h2 {
@@ -36,8 +37,10 @@ p {
   padding-top: .8rem;
 }
 .header {
-  height: 6rem;
-  padding: .2rem;
+  width: 100%;
+  padding:1rem;
+
+  height: 7rem;
   background-color: $light-gray;
   -moz-box-shadow:    0 -.125rem .5rem .25rem rgba(0,0,0,.25);
   -webkit-box-shadow: 0 -.125rem .5rem .25rem rgba(0,0,0,.25);
