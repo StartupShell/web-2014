@@ -81,10 +81,17 @@ video#bgvid {
   .startup:hover {
     opacity: 1; }
 
-button {
+button.apply {
   background: #dd6666;
-  color: white; }
-  button:hover {
+  color: white;
+  outline: none;
+  border: none;
+  padding: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  width: 100%; }
+  button.apply:hover {
     color: #eeeeee; }
 
 input {
@@ -103,6 +110,9 @@ input {
   background: #dd6666;
   color: white;
   text-shadow: none; }
+
+.sponsors {
+  padding-bottom: 2rem; }
 
 .footer {
   background-color: #666666;

@@ -105,9 +105,16 @@ video#bgvid {
 
 // BUTTON
 
-button {
+button.apply {
   background: $red;
   color: $white;
+  outline: none;
+  border: none;
+  padding: 40px;
+  text-transform: uppercase;
+  font-weight: $bold;
+  font-size: 3rem;
+  width: 100%;
   &:hover {
     color: $light-gray;
   }
@@ -139,6 +146,9 @@ input {
     text-shadow: none;
 }
 
+.sponsors{
+  padding-bottom: 2rem;
+}
 
 .footer{
   background-color: $gray;
