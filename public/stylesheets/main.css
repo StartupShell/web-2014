@@ -159,3 +159,5 @@ input {
     padding: 0; }
     .footer ul li {
       display: inline-block; }
+      .footer ul li:hover {
+        opacity: 0.4; }
