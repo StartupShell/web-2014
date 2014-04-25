@@ -1,8 +1,6 @@
 extends layout
 block content
 
-  // HEADER
-
   .video-container
     .overlay
     <video autoplay loop poster="/images/timelapse.jpg" id="bgvid"><source src="/images/timelapse.webm" type="video/webm"><source src="/images/timelapse.mp4" type="video/mp4"><source src="/images/timelapse.ogv" type="video/ogv"></video>
@@ -21,29 +19,11 @@ block content
       .row#about
         .col-sm-12
           .about
-            h2 Incubator + Coworking Space
-            p.
-              In the Spring of 2012 a few students were given an unused space in the Technology Advancement Building.
-              They turned it into Startup Shell, or 'the Shell'. From the start we already had a a strong group of students working
-              on their own companies. We revamped the space over the summer with furniture from our old dorms and made a hardware station.
-              That Fall we officially opened the Shell to students and boosted ourselves to over 70 students from all across campus working
-              on all sorts of awesome projects and companies. 
-            p.
-              Desks, monitors, 3d printers and a hardware station are only the surface of what we provide.
-              The community of visionary and ambitious people is what really makes this space kick.
-              We host sick events such as group dinners, hackathons, and talks. 
-              We hit on every detail needed for a company from legal advice to how to make an awesome product video.
-            p.
-              Over the next few months we will be revamping the space, doubling its size and adding in a state of the art
-              prototyping lab. You don't want to miss out!
+            include includes/about
       .row#ventures
         .col-sm-12
           .ventures
-            h2 Ventures
-            .text-center
-              each img in images
-                a(href="#{img[0]}" target="_blank")
-                  img.startup(src='/images/logos/'+'#{img[1]}')
+            include includes/ventures
 
       .row#connect
         .col-sm-12
@@ -57,40 +37,11 @@ block content
                       p Give a shell talk!
             .col-sm-6
               .news
-                h2 Press
-                a(href="http://www.diamondbackonline.com/news/article_aeed6d9c-be15-11e3-9903-0017a43b2370.html" target="_blank")
-                  h3 Weekend at Bitcamp
-                  p April 8, 2014 | Diamondback
-                a(href="http://umdrightnow.umd.edu/news/student-innovators-converge-umd-bitcamp" target="_blank")
-                  h3 Student Innovators to Converge at UMD for Bitcamp
-                  p March 13, 2014 | UMD Right Now
-                a(href="http://www.diamondbackonline.com/news/campus/article_d535d07c-316e-11e3-971d-0019bb30f31a.html" target="_blank")
-                  h3 Building Something Great
-                  p October 10, 2013 | Diamondback
-                a(href="http://inthecapital.streetwise.co/2013/03/08/startup-shell-umd-student-run-startup-incubator-paving-the-way-for-big-things-to-come/" target="_blank")
-                  h3 Startup Shell: UMD's Student-Run Incubator Paving the Way for Big Things to Come
-                  p March 8th 2013 | In The Capital
-                a(href="http://vimeo.com/73476285" target="_blank")
-                  h3 How Did The Shell Begin?
-                  p 7 months ago | Mtech
+                include includes/news
       .row#membership
         .col-sm-12
           .membership
-            h2 Membership
-            p.
-              Join cool people making cool things in the Shell.
-              We are looking for people who can contribute on multiple 
-              levels: individual, project, organization, and community.
-              While we have many ways to engage otherwise, membership
-              has specific perks and resources to push your project
-              to the next level including:
-            ul
-              li 24-hour swipe access to our decked-out coworking space
-              li Prototyping tools including 3D printer and electronics device lab
-              li Funding opportunities and investor interactions
-              li Mentorship from entrepreneurial professionals
-              li Dedicated desk and workstation space plus storage
-              li Subscriptions to various web products
+            include includes/membership
 
       .row
         .col-sm-12
@@ -98,17 +49,4 @@ block content
       .row
         .col-sm-12
           .text-center.sponsors
-            a(href="http://eng.umd.edu" target="_blank")
-              img.startup(src="/images/sponsors/clark_logo.png", alt: "Clark School" target="_blank")
-            a(href="http://neelbauerlaw.com")
-              img.startup(src="/images/sponsors/neelbauer_logo.png", alt: "Neelbauer Law" target="_blank")
-            a(href="http://mtech.umd.edu")
-              img.startup(src="/images/sponsors/mtech_logo.png", alt: "Mtech" target="_blank")
-            a(href="http://innovation.umd.edu")
-              img.startup(src="/images/sponsors/aie_logo.png", alt: "Academy for Innovation and Entrepreneurship" target="_blank")
-            a(href="http://www.rhsmith.umd.edu/centers-excellence/dingman-center-entrepreneurship" target="_blank")
-              img.startup(src="/images/sponsors/dingman_logo.png", alt: "Dingman Center" target="_blank")
-            a(href="http://spinnakr.com")
-              img.startup(src="/images/sponsors/spinnakr_logo.png", alt: "Spinnakr" target="_blank")
-
-  // FOOTER
+            include includes/sponsors
