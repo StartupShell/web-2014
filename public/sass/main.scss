@@ -34,7 +34,7 @@ p {
 
 // HEADER
 
-.shell-logo{
+.shell-logo {
   padding-top: .8rem;
 }
 
@@ -153,25 +153,26 @@ button.apply {
 }
 
 .events{
+  margin-bottom: 1.7rem;
+  p {
+    color: $mid-gray;
+  }
   a{
     text-decoration: none;
     &:hover{
-      h3{
-        color: lighten($red, 8%);
+      // h3{
+      //   color: lighten($red, 8%);
+      // }
+      p {
+        color: $gray;
       }
     }
   }
-  h3{
+  h3 {
     color: $red;
     font-size: 2.5rem;
     font-weight: $bold;
   }
-  margin-bottom: 1.7rem;
-}
-
-.startTime{
-  color: $red;
-  font-weight: 300;
 }
 
 .where{
@@ -182,7 +183,19 @@ button.apply {
   color: $gray;
 }
 
-
+button.talk {
+  background: $red;
+  color: $white;
+  outline: none;
+  border: none;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: $bold;
+  width: 50%;
+  &:hover {
+    color: $light-gray;
+  }
+}
 
 
 // FORMS & INPUTS

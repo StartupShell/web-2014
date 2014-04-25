@@ -117,21 +117,16 @@ button.apply {
 
 .events {
   margin-bottom: 1.7rem; }
+  .events p {
+    color: #999999; }
   .events a {
     text-decoration: none; }
-    .events a:hover h3 {
-      color: #e48787; }
+    .events a:hover p {
+      color: #666666; }
   .events h3 {
     color: #dd6666;
     font-size: 2.5rem;
     font-weight: 700; }
-
-.startTime {
-  color: #dd6666;
-  font-weight: 300; }
-
-.eventContent {
-  color: #666666; }
 
 input {
   background-color: #666666;

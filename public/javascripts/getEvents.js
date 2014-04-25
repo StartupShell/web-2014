@@ -23,8 +23,8 @@
 
       var html ='<a href='+data.feed.entry[i].link[0].href+'>' + 
                 '<h3>' +data.feed.entry[i].title.$t + '</h3>'+
-                '<p class="startTime">'+dateString+'</p>'+
-                '<p class="where">'+data.feed.entry[i].gd$where[0].valueString+'</p>'+
+                '<p><span class="startTime">'+dateString+'</span> @ '+
+                '<span class="where">'+data.feed.entry[i].gd$where[0].valueString+'</span></p>'+
                 '<p class="eventContent">'+data.feed.entry[i].content.$t+'<p>' + '</a>'
                 
       $('.events').append(html);
