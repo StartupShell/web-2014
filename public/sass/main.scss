@@ -208,6 +208,7 @@ button.apply {
     padding: 0;
     li{
       display: inline-block;
+      padding: .25rem;
       &:hover{
         opacity:0.4;
       }
@@ -248,3 +249,6 @@ input {
     text-shadow: none;
 }
 
+.apply-form{
+  padding-top:75px;
+}
