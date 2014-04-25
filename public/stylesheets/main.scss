@@ -91,12 +91,18 @@ video#bgvid {
   background: white;
 }
 
+.subscribe{
+  border-bottom: 1px solid $light-gray;
+  .row{
+    padding:1rem;
+  }
+}
+
 #subscribe{
   border: none;
-  border-bottom: 1px solid $gray
   outline: none;
   width: 100%;
-  padding: 1.5rem;
+  padding: 2rem;
   font-size: 3rem;
   color: $gray;
 }
@@ -130,6 +136,34 @@ button.apply {
     color: $light-gray;
   }
 }
+
+.events{
+  a{
+    text-decoration: none;
+    &:hover{
+      color: darken(15%);
+    }
+  }
+  h3{
+    color: $red;
+    font-size: 2.5rem;
+  }
+}
+
+.startTime{
+  color: $red;
+  font-weight: 300;
+}
+
+.where{
+
+}
+
+.eventContent{
+
+}
+
+
 
 
 // FORMS & INPUTS
