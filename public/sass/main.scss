@@ -92,9 +92,11 @@ video#bgvid {
 }
 
 .subscribe{
+  background-color:#666;
   border-bottom: 1px solid $light-gray;
   .row{
     padding:1rem;
+    background-color:#666;
   }
 }
 
@@ -141,6 +143,8 @@ button.apply {
 // FORMS & INPUTS
 
 input {
+  background-color:#666;
+  color: $white;
   font-family: $titillium;
   font-weight: 400;
 }
