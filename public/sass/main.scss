@@ -189,6 +189,7 @@ button.talk {
   border: none;
   padding: 5px;
   text-transform: uppercase;
+  font-weight: $bold;
   width: 50%;
   &:hover {
     color: $light-gray;
