@@ -138,6 +138,14 @@ video#bgvid {
   padding: 10px;
 }
 
+@media (max-width : 480px) {
+  .startup {
+    img {
+      width: 100px;
+    }
+  }
+}
+
 .partners {
   .startup {
     padding: .5rem;
