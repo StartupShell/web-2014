@@ -103,3 +103,14 @@ input {
   background: #dd6666;
   color: white;
   text-shadow: none; }
+
+.footer {
+  background-color: #666666;
+  color: white;
+  padding: 1rem; }
+  .footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .footer ul li {
+      display: inline-block; }
