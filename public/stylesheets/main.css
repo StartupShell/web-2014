@@ -78,9 +78,11 @@ video#bgvid {
   background: white; }
 
 .subscribe {
+  background-color: #666666;
   border-bottom: 1px solid #eeeeee; }
   .subscribe .row {
-    padding: 1rem; }
+    padding: 1rem;
+    background-color: #666666; }
 
 #subscribe {
   border: none;
@@ -88,7 +90,7 @@ video#bgvid {
   width: 100%;
   padding: 2rem;
   font-size: 3rem;
-  color: #666666; }
+  color: #eeeeee; }
 
 .col-sm-12 {
   padding-top: 4rem; }
@@ -115,23 +117,19 @@ button.apply {
 
 .events {
   margin-bottom: 1.7rem; }
+  .events p {
+    color: #999999; }
   .events a {
     text-decoration: none; }
-    .events a:hover h3 {
-      color: #e48787; }
+    .events a:hover p {
+      color: #666666; }
   .events h3 {
     color: #dd6666;
     font-size: 2.5rem;
     font-weight: 700; }
 
-.startTime {
-  color: #dd6666;
-  font-weight: 300; }
-
-.eventContent {
-  color: #666666; }
-
 input {
+  background-color: #666666;
   font-family: "Titillium Web";
   font-weight: 400; }
 
