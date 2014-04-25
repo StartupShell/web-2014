@@ -2,20 +2,8 @@ extends layout
 
 block content
 
-  nav.navbar.navbar-default.navbar-fixed-top.header(role="navigation")
-    .container
-      .navbar-header
-        button.navbar-toggle(type="button", data-toggle="collapse",data-target="#navigation")
-          span.sr-only Toggle
-          span.icon-bar
-        a.navbar-brand(href="/"): img(src='/images/logo.svg')
-        
-      .collapse.navbar-collapse#navigation
-        ul.nav.navbar-nav
-          li: a(href="#about") about
-          li: a(href="#ventures") ventures
-          li: a(href="#connect") connect
-          li: a(href="#") apply
+  // HEADER
+
   .video-container
     .overlay
     <video autoplay loop poster="/images/timelapse.jpg" id="bgvid"><source src="/images/timelapse.webm" type="video/webm"><source src="/images/timelapse.mp4" type="video/mp4"><source src="/images/timelapse.ogv" type="video/ogv"></video>
@@ -65,7 +53,7 @@ block content
               .events
                 h2 Events
               .give-a-talk
-                a(href="mailto:hello@startupshell.org")
+                a(href="/talk" target="_blank")
                   button.talk
                       p Give a shell talk!
             .col-sm-6
@@ -122,29 +110,4 @@ block content
             a(href="http://spinnakr.com")
               img.startup(src="/images/sponsors/spinnakr_logo.png", alt: "Spinnakr" target="_blank")
 
-    .footer
-      .container
-        .row
-          .subscribe
-              .container
-                .row
-                  .col-sm-12
-                    input(id="subscribe" type="text" placeholder="subscribe to our newsletter" autofocus)
-          .col-sm-12
-            .row
-              .col-sm-6
-                p &copy; 2013 Startup Shell, University of Maryland
-              .col-sm-6.text-right
-                ul
-                  li
-                    a(href="mailto:info@startupshell.org")
-                      img(src="/images/icons/icon-mail.png", alt: "Email")
-                  li
-                    a(target="_blank" href="http://www.facebook.com/StartupShell")
-                      img(src="/images/icons/icon-facebook.png", alt: "Facebook")
-                  li
-                    a(target="_blank" href="http://twitter.com/startup_shell")
-                      img(src="/images/icons/icon-twitter.png", alt: "Twitter")
-
-  script(src="javascripts/scroll.js")
-  script(src="javascripts/getEvents.js")
+  // FOOTER
