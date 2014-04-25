@@ -228,6 +228,29 @@ input {
   padding-bottom: 2rem;
 }
 
+.news{
+  margin-bottom: 1.7rem;
+  p {
+    color: $mid-gray;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+      // h3{
+      //   color: lighten($red, 8%);
+      // }
+      p {
+        color: $gray;
+      }
+    }
+  }
+  h3 {
+    color: $red;
+    font-size: 2.5rem;
+    font-weight: $bold;
+  }
+}
+
 .footer{
   background-color: $gray;
   color: white;
