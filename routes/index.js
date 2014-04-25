@@ -29,3 +29,11 @@ router.post('/apply', function(req, res) {
 router.get('/test', function(req, res){
   res.send('hh is a test')
 })
+
+// redirect
+router.get('/talk', function(req, res) {
+	res.redirect('https://docs.google.com/forms/d/1ItpxO38vplZ1nvvy02exZZFWdZUi6Cryeik7GTNP-sM/viewform');
+})
+
+
+
