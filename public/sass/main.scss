@@ -101,15 +101,15 @@ video#bgvid {
 }
 
 .content {
-  background: white;
+  background: $white;
 }
 
 .subscribe{
-  background-color:#666;
+  background-color:$gray;
   border-bottom: 1px solid $light-gray;
   .row{
     padding:1rem;
-    background-color:#666;
+    background-color:$gray;
   }
 }
 
@@ -119,7 +119,7 @@ video#bgvid {
   width: 100%;
   padding: 2rem;
   font-size: 3rem;
-  color: $gray;
+  color: $light-gray;
 }
 
 
@@ -156,8 +156,7 @@ button.apply {
 // FORMS & INPUTS
 
 input {
-  background-color:#666;
-  color: $white;
+  background-color:$gray;
   font-family: $titillium;
   font-weight: 400;
 }
