@@ -91,6 +91,23 @@ video#bgvid {
   background: white;
 }
 
+.subscribe{
+  border-bottom: 1px solid $light-gray;
+  .row{
+    padding:1rem;
+  }
+}
+
+#subscribe{
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 2rem;
+  font-size: 3rem;
+  color: $gray;
+}
+
+
 .col-sm-12{
   padding-top:4rem;
 }
