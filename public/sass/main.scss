@@ -33,6 +33,17 @@ p {
 }
 
 
+// SECTIONS
+
+.section{
+  padding-top: 4rem;
+}
+
+.content {
+  background: $white;
+}
+
+
 // HEADER
 
 .shell-logo {
@@ -101,40 +112,22 @@ video#bgvid {
   background:url(/images/timelapse.jpg);
 }
 
-.content {
-  background: $white;
+
+// VENTURES
+
+.startup-grid {
+  margin: 0 -10px;
+  text-align: center;
 }
 
-.subscribe{
-  background-color:$gray;
-  border-bottom: 1px solid $light-gray;
-  .row{
-    padding:1rem;
-    background-color:$gray;
-  }
-}
-
-#subscribe{
-  border: none;
-  outline: none;
-  width: 100%;
-  padding: 2rem;
-  font-size: 3rem;
-  color: $light-gray;
-}
-
-
-.col-sm-12{
-  padding-top:4rem;
-}
 .startup {
   opacity: .8;
   &:hover {
     opacity: 1;
   }
-  padding-right: 1rem;
-  padding-top: 1rem;
+  padding: 10px;
 }
+
 
 // BUTTON
 
@@ -143,7 +136,7 @@ button {
   color: $white;
   outline: none;
   border: none;
-  padding: 5px;
+  padding: 5px 20px;
   text-transform: uppercase;
   font-weight: $bold;
   &:hover {
@@ -157,14 +150,10 @@ button.apply {
   width: 100%;
 }
 
-button.talk {
-  width: 50%;
-}
 
+// EVENTS & PRESS
 
-// EVENTS
-
-.events{
+.events, .news {
   margin-bottom: 1.7rem;
   p {
     color: $mid-gray;
@@ -172,9 +161,6 @@ button.talk {
   a{
     text-decoration: none;
     &:hover{
-      // h3{
-      //   color: lighten($red, 8%);
-      // }
       p {
         color: $gray;
       }
@@ -187,66 +173,11 @@ button.talk {
   }
 }
 
-.where{
 
-}
+// FOOTER
 
-.eventContent{
-  color: $gray;
-}
-
-
-// FORMS & INPUTS
-
-input {
-  background-color:$gray;
-  font-family: $titillium;
-  font-weight: 400;
-}
-
-.red{
-  color: $red;
-}
-
-// FANCY STYLEZ
-
-::-moz-selection {
-    background: $red;
-    color: $white;
-    text-shadow: none;
-}
-
-::selection {
-    background: $red;
-    color: $white;
-    text-shadow: none;
-}
-
-.sponsors{
-  padding-bottom: 2rem;
-}
-
-.news{
-  margin-bottom: 1.7rem;
-  p {
-    color: $mid-gray;
-  }
-  a{
-    text-decoration: none;
-    &:hover{
-      // h3{
-      //   color: lighten($red, 8%);
-      // }
-      p {
-        color: $gray;
-      }
-    }
-  }
-  h3 {
-    color: $red;
-    font-size: 2.5rem;
-    font-weight: $bold;
-  }
+.partners{
+  padding-bottom: 4rem;
 }
 
 .footer{
@@ -265,3 +196,37 @@ input {
     }
   }
 }
+
+#subscribe{
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 3rem;
+  color: $light-gray;
+  border-bottom: 1px solid $mid-gray;
+}
+
+
+// FORMS & INPUTS
+
+input {
+  background-color:$gray;
+  font-family: $titillium;
+  font-weight: 400;
+}
+
+
+// FANCY STYLEZ
+
+::-moz-selection {
+    background: $red;
+    color: $white;
+    text-shadow: none;
+}
+
+::selection {
+    background: $red;
+    color: $white;
+    text-shadow: none;
+}
+

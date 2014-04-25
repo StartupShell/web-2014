@@ -14,33 +14,36 @@ block content
             that fosters entrepreneurship through collaboration 
             at the University of Maryland. These 
             people are building something great.
+
   .content
     .container
       .row#about
-        .col-sm-12
-          .about
+        .about
+          .col-sm-12.section
             include includes/about
       .row#ventures
-        .col-sm-12
-          .ventures
+        .ventures
+          .col-sm-12.section
             include includes/ventures
 
       .row#connect
-        .col-sm-12
-          .row
-            .col-sm-6
-              .events
-                h2 Events
-              .give-a-talk
-                a(href="/talk" target="_blank")
-                  button.talk
-                      p Give a Shell Talk
-            .col-sm-6
-              .news
-                include includes/news
+        .connect
+          .col-sm-12.section
+            .row
+              .col-sm-6
+                .events
+                  h2 Events
+                .give-a-talk
+                  a(href="/talk" target="_blank")
+                    button.talk
+                        p Give a Shell Talk
+              .col-sm-6
+                .news
+                  include includes/news
+
       .row#membership
-        .col-sm-12
-          .membership
+        .membership
+          .col-sm-12.section
             include includes/membership
 
       .row
@@ -48,6 +51,6 @@ block content
           a(href="/apply")
             button.apply Big Ol' Apply Button
       .row
-        .col-sm-12
-          .text-center.sponsors
+        .partners
+          .col-sm-12.section.text-center
             include includes/sponsors

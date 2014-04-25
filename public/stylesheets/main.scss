@@ -1,8 +1,5 @@
 @import 'mixins';
 
-* {
-  .t;
-}
 
 // TYPOGRAPHY
 
@@ -21,6 +18,7 @@ h2 {
   border-bottom: 1px $light-gray solid;
   text-transform: uppercase;
   font-weight: $bold;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -32,6 +30,17 @@ h3 {
 
 p {
   margin: 1rem 0;
+}
+
+
+// SECTIONS
+
+.section{
+  padding-top: 4rem;
+}
+
+.content {
+  background: $white;
 }
 
 
@@ -103,59 +112,55 @@ video#bgvid {
   background:url(/images/timelapse.jpg);
 }
 
-.content {
-  background: $white;
-}
 
-.subscribe{
-  background-color:$gray;
-  border-bottom: 1px solid $light-gray;
-  .row{
-    padding:1rem;
-    background-color:$gray;
+// VENTURES
+
+.ventures {
+  .col-sm-12 {
+    padding-left: 0 !important; 
+    padding-right: 0 !important; 
   }
 }
+.startup-grid {
+  .text-center;
+  margin: 0 -10px;
 
-#subscribe{
-  border: none;
-  outline: none;
-  width: 100%;
-  padding: 2rem;
-  font-size: 3rem;
-  color: $light-gray;
 }
 
-
-.col-sm-12{
-  padding-top:4rem;
-}
 .startup {
   opacity: .8;
   &:hover {
     opacity: 1;
   }
-  padding-right: 1rem;
-  padding-top: 1rem;
+  padding: .5rem;
 }
+
 
 // BUTTON
 
-button.apply {
+button {
   background: $red;
   color: $white;
   outline: none;
   border: none;
-  padding: 40px;
+  padding: 5px 20px;
   text-transform: uppercase;
   font-weight: $bold;
-  font-size: 3rem;
-  width: 100%;
   &:hover {
-    color: $light-gray;
+    background: lighten($red,5%);
   }
 }
 
-.events{
+button.apply {
+  padding: 40px;
+  font-size: 3rem;
+  width: 100%;
+}
+
+
+// EVENTS & PRESS
+
+.events, .news {
   margin-bottom: 1.7rem;
   p {
     color: $mid-gray;
@@ -163,9 +168,6 @@ button.apply {
   a{
     text-decoration: none;
     &:hover{
-      // h3{
-      //   color: lighten($red, 8%);
-      // }
       p {
         color: $gray;
       }
@@ -179,6 +181,39 @@ button.apply {
 }
 
 
+// FOOTER
+
+.partners{
+  padding-bottom: 4rem;
+}
+
+.footer{
+  background-color: $gray;
+  color: white;
+  padding: 1rem;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      &:hover{
+        opacity:0.4;
+      }
+    }
+  }
+}
+
+#subscribe{
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 3rem;
+  color: $light-gray;
+  border-bottom: 1px solid $mid-gray;
+}
+
+
 // FORMS & INPUTS
 
 input {
@@ -187,9 +222,6 @@ input {
   font-weight: 400;
 }
 
-.red{
-  color: $red;
-}
 
 // FANCY STYLEZ
 
@@ -205,20 +237,3 @@ input {
     text-shadow: none;
 }
 
-.sponsors{
-  padding-bottom: 2rem;
-}
-
-.footer{
-  background-color: $gray;
-  color: white;
-  padding: 1rem;
-  ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    li{
-      display: inline-block;
-    }
-  }
-}
