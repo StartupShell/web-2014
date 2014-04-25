@@ -1,5 +1,8 @@
 @import 'mixins';
 
+* {
+  .t;
+}
 
 // TYPOGRAPHY
 
@@ -34,7 +37,7 @@ p {
 
 // HEADER
 
-.shell-logo{
+.shell-logo {
   padding-top: .8rem;
 }
 
@@ -51,7 +54,7 @@ p {
   .navbar-nav {
     li a {
       padding: 2rem;
-      &: hover {
+      &:hover {
         background: white;
       }
     }
@@ -75,11 +78,12 @@ p {
 
 .video-container {
   position: absolute;
-  top: 0%;
-  left: 0%;
-  min-height: 100%;
-  min-width: 100%;
+  top:0%;
+  left:0%;
+  min-height:100%;
+  min-width:100%;
   overflow: hidden;
+  z-index: -100;
 }
 
 .overlay {
@@ -88,27 +92,27 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 10;
   background: linear-gradient(rgba(221,102,102,.5), rgba(221,102,102,.5)), rgba(0,0,0,0.25);
 }
 
 video#bgvid {
   position: absolute; 
+  z-index:0;
   min-width: 100%;
-  background: url(/images/timelapse.jpg);
+  background:url(/images/timelapse.jpg);
 }
 
 .content {
-  background: white;
+  background: $white;
 }
 
 .subscribe{
+  background-color:$gray;
   border-bottom: 1px solid $light-gray;
   .row{
-<<<<<<< HEAD
     padding:1rem;
-=======
-    padding: 1rem;
->>>>>>> 0d88e79950f40229a6fccfb41d1d221866606171
+    background-color:$gray;
   }
 }
 
@@ -118,16 +122,16 @@ video#bgvid {
   width: 100%;
   padding: 2rem;
   font-size: 3rem;
-  color: $gray;
+  color: $light-gray;
 }
 
 
 .col-sm-12{
-  padding-top: 4rem;
+  padding-top:4rem;
 }
 .startup {
   opacity: .8;
-  &: hover {
+  &:hover {
     opacity: 1;
   }
   padding-right: 1rem;
@@ -146,43 +150,39 @@ button.apply {
   font-weight: $bold;
   font-size: 3rem;
   width: 100%;
-  &: hover {
+  &:hover {
     color: $light-gray;
   }
 }
 
 .events{
+  margin-bottom: 1.7rem;
+  p {
+    color: $mid-gray;
+  }
   a{
     text-decoration: none;
     &:hover{
-      color: darken(15%);
+      // h3{
+      //   color: lighten($red, 8%);
+      // }
+      p {
+        color: $gray;
+      }
     }
   }
-  h3{
+  h3 {
     color: $red;
     font-size: 2.5rem;
+    font-weight: $bold;
   }
 }
-
-.startTime{
-  color: $red;
-  font-weight: 300;
-}
-
-.where{
-
-}
-
-.eventContent{
-
-}
-
-
 
 
 // FORMS & INPUTS
 
 input {
+  background-color:$gray;
   font-family: $titillium;
   font-weight: 400;
 }
@@ -193,13 +193,13 @@ input {
 
 // FANCY STYLEZ
 
-: : -moz-selection {
+::-moz-selection {
     background: $red;
     color: $white;
     text-shadow: none;
 }
 
-: : selection {
+::selection {
     background: $red;
     color: $white;
     text-shadow: none;
