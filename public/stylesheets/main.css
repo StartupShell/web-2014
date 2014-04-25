@@ -78,9 +78,11 @@ video#bgvid {
   background: white; }
 
 .subscribe {
+  background-color: #666666;
   border-bottom: 1px solid #eeeeee; }
   .subscribe .row {
-    padding: 1rem; }
+    padding: 1rem;
+    background-color: #666666; }
 
 #subscribe {
   border: none;
@@ -88,7 +90,7 @@ video#bgvid {
   width: 100%;
   padding: 2rem;
   font-size: 3rem;
-  color: #666666; }
+  color: #eeeeee; }
 
 .col-sm-12 {
   padding-top: 4rem; }
@@ -132,6 +134,7 @@ button.apply {
   color: #666666; }
 
 input {
+  background-color: #666666;
   font-family: "Titillium Web";
   font-weight: 400; }
 

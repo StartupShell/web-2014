@@ -15,17 +15,19 @@
 
 
     for (var i = 0; i <data.feed.entry.length; i++) {
+      var date = new Date(data.feed.entry[i].gd$when[0].startTime);
+      var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+
+      var dateString = months[date.getMonth()+1] + ' ' + date.getDay() +', ' + date.toLocaleTimeString();
+
       var html ='<a href='+data.feed.entry[i].link[0].href+'>' + 
                 '<h3>' +data.feed.entry[i].title.$t + '</h3>'+
-                '<p class="startTime">'+data.feed.entry[i].gd$when[0].startTime+'</p>'+
+                '<p class="startTime">'+dateString+'</p>'+
                 '<p class="where">'+data.feed.entry[i].gd$where[0].valueString+'</p>'+
                 '<p class="eventContent">'+data.feed.entry[i].content.$t+'<p>' + '</a>'
                 
       $('.events').append(html);
-      // console.log(data.feed.entry[i])
-    }
 
-    
+    }  
   })
-
 })();
