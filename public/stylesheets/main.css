@@ -28,12 +28,18 @@ p {
   padding-top: .8rem; }
 
 .header {
-  height: 6rem;
   padding: .2rem;
   background-color: #eeeeee;
   -moz-box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
   box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25); }
+
+.navbar {
+  padding: 0; }
+  .navbar .navbar-nav li a {
+    padding: 2rem; }
+    .navbar .navbar-nav li a:hover {
+      background: white; }
 
 .feature {
   max-height: 680px;

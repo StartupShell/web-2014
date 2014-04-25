@@ -33,17 +33,30 @@ p {
 
 
 // HEADER
+
 .shell-logo{
   padding-top: .8rem;
 }
+
 .header {
-  height: 6rem;
   padding: .2rem;
   background-color: $light-gray;
   -moz-box-shadow:    0 -.125rem .5rem .25rem rgba(0,0,0,.25);
   -webkit-box-shadow: 0 -.125rem .5rem .25rem rgba(0,0,0,.25);
   box-shadow:         0 -.125rem .5rem .25rem rgba(0,0,0,.25);
-  
+}
+.navbar {
+  padding: 0;
+
+  .navbar-nav {
+    li a {
+      padding: 2rem;
+      &:hover {
+        background: white;
+      }
+    }
+  }
+
 }
 
 
