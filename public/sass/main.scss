@@ -182,7 +182,18 @@ button.apply {
   color: $gray;
 }
 
-
+button.talk {
+  background: $red;
+  color: $white;
+  outline: none;
+  border: none;
+  padding: 5px;
+  text-transform: uppercase;
+  width: 50%;
+  &:hover {
+    color: $light-gray;
+  }
+}
 
 
 // FORMS & INPUTS
