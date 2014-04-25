@@ -139,7 +139,30 @@ input {
     text-shadow: none;
 }
 
-.footah{
+.apply{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  text-rendering: optimizelegibility;
+  text-align: left;
+  font-size: 3.5em;
+  color: #666666;
+  text-transform: uppercase;
+  margin: .5em 0;
+  line-height: 1.25;
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+  display: block;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: #dd6666;
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 40px;
+  border:none;
+}
+
+.footer{
   background-color:#666666;
 
   height: 4rem;
