@@ -138,3 +138,25 @@ input {
     color: $white;
     text-shadow: none;
 }
+
+.footah{
+  background-color:#666666;
+
+  height: 4rem;
+  p{
+    color:white;
+  }
+  .footer-left{
+    float:left;
+  }
+  .footer-right{
+    float:right;
+  }
+  ul{
+    list-style-type: none;
+    li{
+      display:inline-block;
+      margin-right:1rem;
+    }
+  }
+}
