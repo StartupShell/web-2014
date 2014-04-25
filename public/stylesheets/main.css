@@ -6,7 +6,8 @@ h1 {
   color: white;
   text-transform: uppercase;
   margin: .5em 0;
-  line-height: 1; }
+  line-height: 1;
+  font-weight: 700; }
 
 h2 {
   font-size: 5.5rem;
@@ -27,12 +28,9 @@ p {
   padding-top: .8rem; }
 
 .header {
-  width: 100%;
-  padding: 1rem;
-  height: 7rem;
+  height: 6rem;
+  padding: .2rem;
   background-color: #eeeeee;
-  position: fixed;
-  z-index: 100;
   -moz-box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
   box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25); }
@@ -72,6 +70,9 @@ video#bgvid {
 
 .content {
   background: white; }
+
+.col-sm-12 {
+  padding-top: 4rem; }
 
 .startup {
   opacity: .8;

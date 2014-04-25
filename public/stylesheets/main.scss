@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   color: $gray;
   border-bottom: 1px $light-gray solid;
   text-transform: uppercase;
@@ -36,29 +36,22 @@ p {
   padding-top: .8rem;
 }
 .header {
-  width: 100%;
-  padding:.8rem;
-
   height: 6rem;
+  padding: .2rem;
   background-color: $light-gray;
-  position: fixed;
-  z-index: 100;
   -moz-box-shadow:    0 -.125rem .5rem .25rem rgba(0,0,0,.25);
   -webkit-box-shadow: 0 -.125rem .5rem .25rem rgba(0,0,0,.25);
   box-shadow:         0 -.125rem .5rem .25rem rgba(0,0,0,.25);
-  a{
-    padding:margin-top:1rem;
-  }
+  
 }
 
 
 // FEATURE
 
 .feature {
-  min-height: 55rem;
   max-height: 680px;
   color: white;
-  padding: 15rem 0;
+  padding: 10vw 0;
   p {
     font-size: 2rem;
     max-width: 80%;
@@ -97,6 +90,9 @@ video#bgvid {
   background: white;
 }
 
+#about{
+  top50px;
+}
 .startup {
   opacity: .8;
   &:hover {

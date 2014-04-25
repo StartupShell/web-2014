@@ -12,30 +12,10 @@ block content
         
       .collapse.navbar-collapse#navigation
         ul.nav.navbar-nav
-          li: a(href="#") about
-          li: a(href="#") ventures
-          li: a(href="#") connect
+          li: a(href="#about") about
+          li: a(href="#ventures") ventures
+          li: a(href="#connect") connect
           li: a(href="#") apply
-
-  //- .header
-  //-   .container
-  //-     .row
-  //-       .col-sm-12
-  //-         .row
-  //-           .col-sm-1
-  //-             img.shell-logo(src='/images/logo.svg')
-  //-           .col-sm-2.hidden-xs.hidden-sm
-  //-             a(href="#"): p startup shell
-  //-           .col-sm-1.col-sm-offset-4
-  //-             a(href="#"): p about
-  //-           .col-sm-1
-  //-             a(href="#"): p ventures
-  //-           .col-sm-1
-  //-             a(href="#"): p connect
-  //-           .col-sm-1
-  //-             a.red(href="#"): p apply
-  //-           .col-sm-1
-  //-             a(href="#"): i.fa.fa-bars
   .video-container
     .overlay
     <video autoplay loop poster="/images/timelapse.jpg" id="bgvid"><source src="/images/timelapse.webm" type="video/webm"><source src="/images/timelapse.mp4" type="video/mp4"><source src="/images/timelapse.ogv" type="video/ogv"></video>
@@ -51,7 +31,7 @@ block content
             people are building something great.
   .content
     .container
-      .row
+      .row#about
         .col-sm-12
           .about
             h2 Incubator + Coworking Space
@@ -64,7 +44,7 @@ block content
             p.
               More stuff goes here
 
-      .row
+      .row#ventures
         .col-sm-12
           .ventures
             h2 Ventures
@@ -73,7 +53,7 @@ block content
                 a(href="#{img[0]}")
                   img.startup(src='/images/logos/'+'#{img[1]}')
 
-      .row
+      .row#connect
         .col-sm-12
           .row
             .col-sm-6
