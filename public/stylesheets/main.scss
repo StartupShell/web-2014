@@ -9,10 +9,11 @@ h1 {
   text-transform: uppercase;
   margin: .5em 0;
   line-height: 1;
+  font-weight: $bold;
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   color: $gray;
   border-bottom: 1px $light-gray solid;
   text-transform: uppercase;
@@ -37,28 +38,25 @@ p {
 }
 .header {
   width: 100%;
-  padding:.8rem;
+  padding:1rem;
 
-  height: 6rem;
+  height: 7rem;
   background-color: $light-gray;
   position: fixed;
   z-index: 100;
   -moz-box-shadow:    0 -.125rem .5rem .25rem rgba(0,0,0,.25);
   -webkit-box-shadow: 0 -.125rem .5rem .25rem rgba(0,0,0,.25);
   box-shadow:         0 -.125rem .5rem .25rem rgba(0,0,0,.25);
-  a{
-    padding:margin-top:1rem;
-  }
+  
 }
 
 
 // FEATURE
 
 .feature {
-  min-height: 55rem;
   max-height: 680px;
   color: white;
-  padding: 15rem 0;
+  padding: 10vw 0;
   p {
     font-size: 2rem;
     max-width: 80%;
