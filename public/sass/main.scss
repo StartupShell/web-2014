@@ -51,6 +51,8 @@ p {
     display: inline-block;
     font-size: 16px;
     margin-left: 20px;
+    margin-top: -.1rem;
+    line-height: 2.3;
   }
   
 }
@@ -255,3 +257,6 @@ input {
     text-shadow: none;
 }
 
+.apply-form{
+  padding-top:75px;
+}
