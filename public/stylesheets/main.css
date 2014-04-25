@@ -31,6 +31,13 @@ p {
 .content {
   background: white; }
 
+.full img {
+  display: inline-block; }
+.full p {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px; }
+
 .shell-logo {
   padding-top: .8rem; }
 
