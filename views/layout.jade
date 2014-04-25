@@ -26,25 +26,26 @@ html
       ga('create', 'UA-43752415-1', 'startupshell.org');
       ga('send', 'pageview');
 
-    nav.navbar.navbar-default.navbar-fixed-top.header(role="navigation")
-    .container
-      .navbar-header
-        button.navbar-toggle(type="button", data-toggle="collapse",data-target="#navigation")
-          span.sr-only Toggle
-          span.icon-bar
-        a.navbar-brand(href="/"): img(src='/images/logo.svg')
-        
-      .collapse.navbar-collapse#navigation
-        ul.nav.navbar-nav
-          li: a(href="#about") about
-          li: a(href="#ventures") ventures
-          li: a(href="#connect") connect
-          li: a(href="#") apply
+    
 
   body
+    nav.navbar.navbar-default.navbar-fixed-top.header(role="navigation")
+      .container
+        .navbar-header
+          button.navbar-toggle(type="button", data-toggle="collapse",data-target="#navigation")
+            span.sr-only Toggle
+            span.icon-bar
+          a.navbar-brand(href="/"): img(src='/images/logo.svg')
+          
+        .collapse.navbar-collapse#navigation
+          ul.nav.navbar-nav
+            li: a(href="#about") about
+            li: a(href="#ventures") ventures
+            li: a(href="#connect") connect
+            li: a(href="#") apply
+    
     block content
-
-
+    
     .footer
       .container
         .row
@@ -69,5 +70,6 @@ html
                     a(target="_blank" href="http://twitter.com/startup_shell")
                       img(src="/images/icons/icon-twitter.png", alt: "Twitter")
 
+  
   script(src="javascripts/scroll.js")
   script(src="javascripts/getEvents.js")
