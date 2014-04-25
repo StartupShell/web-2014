@@ -6,7 +6,8 @@ h1 {
   color: white;
   text-transform: uppercase;
   margin: .5em 0;
-  line-height: 1; }
+  line-height: 1;
+  font-weight: 700; }
 
 h2 {
   font-size: 5.5rem;
