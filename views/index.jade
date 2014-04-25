@@ -55,7 +55,7 @@ block content
             h2 Ventures
             .text-center
               each img in images
-                a(href="#{img[0]}")
+                a(href="#{img[0]}" target="_blank")
                   img.startup(src='/images/logos/'+'#{img[1]}')
 
       .row#connect
@@ -106,18 +106,18 @@ block content
       .row
         .col-sm-12
           .text-center.sponsors
-            a(href="http://eng.umd.edu")
-              img.startup(src="/images/sponsors/clark_logo.png", alt: "Clark School")
+            a(href="http://eng.umd.edu" target="_blank")
+              img.startup(src="/images/sponsors/clark_logo.png", alt: "Clark School" target="_blank")
             a(href="http://neelbauerlaw.com")
-              img.startup(src="/images/sponsors/neelbauer_logo.png", alt: "Neelbauer Law")
+              img.startup(src="/images/sponsors/neelbauer_logo.png", alt: "Neelbauer Law" target="_blank")
             a(href="http://mtech.umd.edu")
-              img.startup(src="/images/sponsors/mtech_logo.png", alt: "Mtech")
+              img.startup(src="/images/sponsors/mtech_logo.png", alt: "Mtech" target="_blank")
             a(href="http://innovation.umd.edu")
-              img.startup(src="/images/sponsors/aie_logo.png", alt: "Academy for Innovation and Entrepreneurship")
-            a(href="http://www.rhsmith.umd.edu/centers-excellence/dingman-center-entrepreneurship")
-              img.startup(src="/images/sponsors/dingman_logo.png", alt: "Dingman Center")
+              img.startup(src="/images/sponsors/aie_logo.png", alt: "Academy for Innovation and Entrepreneurship" target="_blank")
+            a(href="http://www.rhsmith.umd.edu/centers-excellence/dingman-center-entrepreneurship" target="_blank")
+              img.startup(src="/images/sponsors/dingman_logo.png", alt: "Dingman Center" target="_blank")
             a(href="http://spinnakr.com")
-              img.startup(src="/images/sponsors/spinnakr_logo.png", alt: "Spinnakr")
+              img.startup(src="/images/sponsors/spinnakr_logo.png", alt: "Spinnakr" target="_blank")
 
     .footer
       .container
