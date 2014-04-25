@@ -28,8 +28,8 @@ p {
 
 .header {
   width: 100%;
-  padding: .8rem;
-  height: 6rem;
+  padding: 1rem;
+  height: 7rem;
   background-color: #eeeeee;
   position: fixed;
   z-index: 100;
