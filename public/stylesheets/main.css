@@ -25,6 +25,12 @@ h3 {
 p {
   margin: 1rem 0; }
 
+.section {
+  padding-top: 4rem; }
+
+.content {
+  background: white; }
+
 .shell-logo {
   padding-top: .8rem; }
 
@@ -75,31 +81,13 @@ video#bgvid {
   min-width: 100%;
   background: url(/images/timelapse.jpg); }
 
-.content {
-  background: white; }
-
-.subscribe {
-  background-color: #666666;
-  border-bottom: 1px solid #eeeeee; }
-  .subscribe .row {
-    padding: 1rem;
-    background-color: #666666; }
-
-#subscribe {
-  border: none;
-  outline: none;
-  width: 100%;
-  padding: 2rem;
-  font-size: 3rem;
-  color: #eeeeee; }
-
-.col-sm-12 {
-  padding-top: 4rem; }
+.startup-grid {
+  margin: 0 -10px;
+  text-align: center; }
 
 .startup {
   opacity: .8;
-  padding-right: 1rem;
-  padding-top: 1rem; }
+  padding: 10px; }
   .startup:hover {
     opacity: 1; }
 
@@ -108,7 +96,7 @@ button {
   color: white;
   outline: none;
   border: none;
-  padding: 5px;
+  padding: 5px 20px;
   text-transform: uppercase;
   font-weight: 700; }
   button:hover {
@@ -119,58 +107,21 @@ button.apply {
   font-size: 3rem;
   width: 100%; }
 
-button.talk {
-  width: 50%; }
-
-.events {
+.events, .news {
   margin-bottom: 1.7rem; }
-  .events p {
+  .events p, .news p {
     color: #999999; }
-  .events a {
+  .events a, .news a {
     text-decoration: none; }
-    .events a:hover p {
+    .events a:hover p, .news a:hover p {
       color: #666666; }
-  .events h3 {
+  .events h3, .news h3 {
     color: #dd6666;
     font-size: 2.5rem;
     font-weight: 700; }
 
-.eventContent {
-  color: #666666; }
-
-input {
-  background-color: #666666;
-  font-family: "Titillium Web";
-  font-weight: 400; }
-
-.red {
-  color: #dd6666; }
-
-::-moz-selection {
-  background: #dd6666;
-  color: white;
-  text-shadow: none; }
-
-::selection {
-  background: #dd6666;
-  color: white;
-  text-shadow: none; }
-
-.sponsors {
-  padding-bottom: 2rem; }
-
-.news {
-  margin-bottom: 1.7rem; }
-  .news p {
-    color: #999999; }
-  .news a {
-    text-decoration: none; }
-    .news a:hover p {
-      color: #666666; }
-  .news h3 {
-    color: #dd6666;
-    font-size: 2.5rem;
-    font-weight: 700; }
+.partners {
+  padding-bottom: 4rem; }
 
 .footer {
   background-color: #666666;
@@ -184,3 +135,26 @@ input {
       display: inline-block; }
       .footer ul li:hover {
         opacity: 0.4; }
+
+#subscribe {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 3rem;
+  color: #eeeeee;
+  border-bottom: 1px solid #999999; }
+
+input {
+  background-color: #666666;
+  font-family: "Titillium Web";
+  font-weight: 400; }
+
+::-moz-selection {
+  background: #dd6666;
+  color: white;
+  text-shadow: none; }
+
+::selection {
+  background: #dd6666;
+  color: white;
+  text-shadow: none; }
