@@ -1,8 +1,5 @@
 @import 'mixins';
 
-* {
-  .t;
-}
 
 // TYPOGRAPHY
 
@@ -175,6 +172,27 @@ button.apply {
     color: $red;
     font-size: 2.5rem;
     font-weight: $bold;
+  }
+}
+
+.where{
+
+}
+
+.eventContent{
+  color: $gray;
+}
+
+button.talk {
+  background: $red;
+  color: $white;
+  outline: none;
+  border: none;
+  padding: 5px;
+  text-transform: uppercase;
+  width: 50%;
+  &:hover {
+    color: $light-gray;
   }
 }
 
