@@ -17,7 +17,7 @@ $border-radius-base:        4px !default;
   // Prevent floats from breaking the navbar
   @include clearfix();
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media screen and (min-width: $grid-float-breakpoint) {
     border-radius: $navbar-border-radius;
   }
 }
@@ -31,7 +31,7 @@ $border-radius-base:        4px !default;
 .navbar-header {
   @include clearfix();
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media screen and (min-width: $grid-float-breakpoint) {
     float: left;
   }
 }
@@ -60,7 +60,7 @@ $border-radius-base:        4px !default;
     overflow-y: auto;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media screen and (min-width: $grid-float-breakpoint) {
     width: auto;
     border-top: 0;
     box-shadow: none;
