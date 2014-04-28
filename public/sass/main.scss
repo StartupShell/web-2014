@@ -224,7 +224,7 @@ button.apply {
   }
 }
 
-#subscribe{
+.subscription{
   border: none;
   outline: none;
   width: 100%;
@@ -259,4 +259,17 @@ input {
 
 .apply-form{
   padding-top:75px;
+}
+
+.profiles{
+  img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: inline-block;
+  }
+  span{
+    display: inline-block;
+  }
 }
