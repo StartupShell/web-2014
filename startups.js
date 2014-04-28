@@ -13,7 +13,7 @@ module.exports = {startups: [
 ["http://gethotdrop.com", "logo_hotdrop.png", "Hotdrop"],
 ["http://imaginex.co", "logo_imaginex.png", "[Imaginex]"],
 ["http://jhilmediadesign.com", "logo_jhilmediadesign.png", "JHil Media Design"],
-["http://mademicrofinance.org/MADE", "logo_made.png", "MADE Microfinance"],
+["http://mademicrofinance.org/", "logo_made.png", "MADE Microfinance"],
 ["http://mindforgedesign.com", "logo_mindforge.png", "Mindforge Design"],
 ["http://miyagi.me", "logo_miyagi.png", "Miyagi"],
 ["http://paralleltracks.com", "logo_paralleltracks.png", "Parallel Tracks"],
