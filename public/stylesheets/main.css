@@ -149,7 +149,8 @@ button.apply {
       .footer ul li:hover {
         opacity: 0.4; }
 
-#subscribe {
+.subscription {
+  padding-top: 15px;
   border: none;
   outline: none;
   width: 100%;
@@ -174,3 +175,42 @@ input {
 
 .apply-form {
   padding-top: 75px; }
+
+.profiles {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .profiles img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: inline-block; }
+  .profiles span.text-content {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    border-radius: 50%;
+    opacity: 0; }
+  .profiles span.text-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+  .profiles ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  .profiles li {
+    display: inline-block;
+    height: 150px;
+    margin: 2rem 2rem 2rem 0;
+    position: relative;
+    width: 150px; }
+  .profiles li:hover span.text-content {
+    opacity: 1; }
