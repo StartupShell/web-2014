@@ -19,7 +19,7 @@
       var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
       var time = date.toLocaleTimeString();
       time = time.split(':')
-      var dateString = months[date.getMonth()+1] + ' ' + date.getDay() +', ' + time[0]+":"+time[2];
+      var dateString = months[date.getMonth()+0] + ' ' + date.getDay() +', ' + time[0]+":"+time[2];
 
       var html ='<a href='+data.feed.entry[i].link[0].href+'>' + 
                 '<h3>' +data.feed.entry[i].title.$t + '</h3>'+
