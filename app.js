@@ -15,6 +15,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', require('./routes'));
+app.all('*', function(req, res) {
+    res.redirect('/')
+})
 
 app.set('port', process.env.PORT || 3000);
 
