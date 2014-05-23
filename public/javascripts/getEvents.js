@@ -31,12 +31,15 @@
         if (date.getUTCHours() > 12) stand = 'PM'
         var str = months[date.getUTCMonth()] + ' ' + date.getUTCDate() + ', ' + getStandTime(date.getUTCHours()) + ':' + ('0' + date.getUTCMinutes()).slice(-2) + ' ' + stand
         return str
-      }
+        }
+        
+
 
       var when = data.feed.entry[i].gd$when[0].startTime;
       var date = Date.parse(when.split('.')[0]);      
       date = new Date(date);
       
+
       var dateString = convertToDateString(date);
       
       var html ='<a href='+data.feed.entry[i].link[0].href+'>' + 
