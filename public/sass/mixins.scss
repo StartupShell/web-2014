@@ -1,0 +1,41 @@
+// COLORS
+
+$red: #dd6666;
+
+$gray: #666666;
+$mid-gray: #999999;
+$light-gray: #eeeeee;
+
+$white: #ffffff;
+
+
+// TYPOGRAPHY
+
+$titillium: 'Titillium Web';
+
+$bold: 700;
+
+
+// LAYOUT
+
+.text-center {
+  text-align: center;
+}
+
+
+// IMAGES
+
+@mixin bg-image($imageURL) {
+  background: url('../'+$imageURL) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+

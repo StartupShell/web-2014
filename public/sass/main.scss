@@ -1,0 +1,309 @@
+@import 'mixins';
+
+
+// TYPOGRAPHY
+
+h1 {
+  font-size: 10rem;
+  color: $white;
+  text-transform: uppercase;
+  margin: .5em 0;
+  line-height: 1;
+  font-weight: $bold;
+}
+
+h2 {
+  font-size: 5.5rem;
+  color: $gray;
+  border-bottom: 1px $light-gray solid;
+  text-transform: uppercase;
+  font-weight: $bold;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: $gray;
+  line-height: 1.25;
+
+}
+
+p {
+  margin: 1rem 0;
+}
+
+
+// SECTIONS
+
+.section{
+  padding-top: 4rem;
+}
+
+.content {
+  background: $white;
+}
+
+.full{
+  img{
+    display: inline-block;  
+  }
+  p{
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: -.1rem;
+    line-height: 2.3;
+  }
+  
+}
+// HEADER
+
+.shell-logo {
+  padding-top: .8rem;
+}
+
+.header {
+  padding: .2rem;
+  background-color: $light-gray;
+  -moz-box-shadow:    0 -.125rem .5rem .25rem rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 -.125rem .5rem .25rem rgba(0,0,0,.25);
+  box-shadow:         0 -.125rem .5rem .25rem rgba(0,0,0,.25);
+}
+.navbar {
+  padding: 0;
+
+  .navbar-nav {
+    li a {
+      padding: 2rem;
+      &:hover {
+        background: white;
+      }
+    }
+  }
+
+}
+
+
+// FEATURE
+
+.feature {
+  max-height: 680px;
+  color: white;
+  padding: 10vw 0;
+  p {
+    font-size: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.video-container {
+  position: absolute;
+  top:0%;
+  left:0%;
+  min-height:100%;
+  min-width:100%;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: linear-gradient(rgba(221,102,102,.5), rgba(221,102,102,.5)), rgba(0,0,0,0.25);
+}
+
+video#bgvid {
+  position: absolute; 
+  z-index:0;
+  min-width: 100%;
+  background:url(/images/timelapse.jpg);
+}
+
+
+// VENTURES
+
+.startup-grid {
+  margin: 0 -10px;
+  text-align: center;
+}
+
+.startup {
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+  padding: 10px;
+}
+
+// @media (max-width : 480px) {
+//   .startup {
+//     img {
+//       width: 100px;
+//     }
+//   }
+// }
+
+.partners {
+  .startup {
+    padding: .5rem;
+  }
+}
+
+
+// BUTTON
+
+button {
+  background: $red;
+  color: $white;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-weight: $bold;
+  &:hover {
+    background: lighten($red,5%);
+  }
+}
+
+button.apply {
+  padding: 40px;
+  font-size: 3rem;
+  width: 100%;
+}
+
+
+// EVENTS & PRESS
+
+.events, .news {
+  margin-bottom: 1.7rem;
+  p {
+    color: $mid-gray;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+      p {
+        color: $gray;
+      }
+    }
+  }
+  h3 {
+    color: $red;
+    font-size: 2.5rem;
+    font-weight: $bold;
+  }
+}
+
+
+// FOOTER
+
+.partners{
+  padding-bottom: 4rem;
+}
+
+.footer{
+  background-color: $gray;
+  color: white;
+  padding: 1rem;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      padding: .25rem;
+      &:hover{
+        opacity:0.4;
+      }
+    }
+  }
+}
+
+.subscription{
+  padding-top: 15px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 3rem;
+  color: $light-gray;
+  border-bottom: 1px solid $mid-gray;
+}
+
+
+// FORMS & INPUTS
+
+input {
+  background-color:$gray;
+  font-family: $titillium;
+  font-weight: 400;
+}
+
+
+// FANCY STYLEZ
+
+::-moz-selection {
+    background: $red;
+    color: $white;
+    text-shadow: none;
+}
+
+::selection {
+    background: $red;
+    color: $white;
+    text-shadow: none;
+}
+
+.apply-form{
+  padding-top:75px;
+}
+
+.profiles{
+  padding-top:50px;
+  padding-bottom:50px;
+  img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: inline-block;
+  }
+  span.text-content{
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  span.text-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  li{
+    display: inline-block;
+    height: 150px;
+    margin: 2rem 2rem 2rem 0;
+    position: relative;
+    width: 150px;
+  }
+  li:hover span.text-content{
+    opacity:1;
+  }
+}
