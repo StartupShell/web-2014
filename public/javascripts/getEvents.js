@@ -12,14 +12,32 @@
   })
   .done(function(data) {
 
-
+    console.log(data);
 
     for (var i = 0; i <data.feed.entry.length; i++) {
-      var date = new Date(data.feed.entry[i].gd$when[0].startTime);
+      
+      function getStandTime(time) {
+        if (time> 12) {
+          return time - 12 + ' PM'
+        }
+        else if (time === 0) {
+          return ""
+        }
+        else if (time < 12 && time > 0) {
+          return time + ' AM'
+        }
+        
+      }
+
+      var when = data.feed.entry[i].gd$when[0].startTime;
+      var date = Date.parse(when.split('.')[0]);      
+      date = new Date(date);
+      
       var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-      var time = date.toLocaleTimeString();
-      time = time.split(':')
-      var dateString = months[date.getMonth()+0] + ' ' + date.getDay() +', ' + time[0]+":"+time[2];
+      var month = months[date.getUTCMonth()]
+      var day = date.getUTCDate()
+      var time = getStandTime(date.getUTCHours())
+      var dateString = month + ' ' + day + ', ' + time
 
       var html ='<a href='+data.feed.entry[i].link[0].href+'>' + 
                 '<h3>' +data.feed.entry[i].title.$t + '</h3>'+
