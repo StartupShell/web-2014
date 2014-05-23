@@ -37,7 +37,7 @@
       var date = Date.parse(when.split('.')[0]);      
       date = new Date(date);
       
-      var dateString = convertToDateString(date)
+      var dateString = convertToDateString(date);
       
       var html ='<a href='+data.feed.entry[i].link[0].href+'>' + 
                 '<h3>' +data.feed.entry[i].title.$t + '</h3>'+
