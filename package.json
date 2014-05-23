@@ -12,7 +12,7 @@
     "lodash": "*",
     "morgan": "*",
     "node-sass": "*",
-    "static-favicon": "*"
+    "serve-favicon": "^2.0.0"
   },
   "devDependencies": {
     "gulp": "*",
