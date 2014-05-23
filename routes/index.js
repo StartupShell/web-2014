@@ -1,41 +1,32 @@
 var express = require('express');
 var router = express.Router();
-var fs = require('fs');
 var startups = require('./../startups');
 var members = require('./../members');
 var _ = require('lodash');
-var request = require('request');
 module.exports = router;
-
-
 
 // Home page
 router.get('/', function(req, res) {
-
-	res.render('index',  {images: _.shuffle(startups.startups) });
-
+	res.render('index',  {images: _.shuffle(startups.startups)});
 });
 
 
-// Apply
+// Apply Page
 router.get('/apply', function(req, res) {
   res.render('apply');
 })
 
+// Apply
 router.post('/apply', function(req, res) {
   res.send('You applied. Good work');
 })
 
-
-router.get('/test', function(req, res){
-  res.send('hh is a test')
+// Members
+router.get('/members', function(req, res) {
+  res.render('members',  {people: _.shuffle(members.members)});
 })
 
 // redirect
 router.get('/talk', function(req, res) {
 	res.redirect('https://docs.google.com/forms/d/1ItpxO38vplZ1nvvy02exZZFWdZUi6Cryeik7GTNP-sM/viewform');
-})
-
-router.get('/members', function(req, res) {
-  res.render('members',  {people: _.shuffle(members.members) });
 })
