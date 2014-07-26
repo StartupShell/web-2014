@@ -10,7 +10,6 @@
     "express": "*",
     "jade": "*",
     "lodash": "*",
-    "morgan": "*",
     "node-sass": "*",
     "serve-favicon": "^2.0.0"
   },
