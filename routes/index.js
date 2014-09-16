@@ -13,13 +13,8 @@ router.get('/', function(req, res) {
 
 // Apply Page
 router.get('/apply', function(req, res) {
-  res.render('apply');
-})
-
-// Apply
-router.post('/apply', function(req, res) {
-  res.send('You applied. Good work');
-})
+  res.redirect('https://docs.google.com/forms/d/1MY1-Pwy-QnD6I5Ps2EZ4SV4CCCWxNP8c92RtBs2lVhA/viewform');
+});
 
 // Members
 router.get('/members', function(req, res) {
