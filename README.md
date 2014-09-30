@@ -1,2 +1,5 @@
 ## Local Set Up
-redo
+install brew
+install node
+npm install bower -g
+bower install
