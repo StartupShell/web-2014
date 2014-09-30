@@ -5,7 +5,46 @@ html {
 body {
   font-family: "Titillium Web", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  height: 100%; }
+  height: 100%;
+  color: #666666; }
+
+h2 {
+  font-size: 36px;
+  border-bottom: 1px #eeeeee solid;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px; }
+
+h3 {
+  color: #dd6666;
+  font-weight: 600;
+  font-size: 22px; }
+
+.container > .row {
+  margin-top: 20px; }
+
+/* Buttons */
+.btn {
+  margin: 10px 15px 10px 0;
+  outline: none;
+  border: none; }
+
+.btn-default {
+  background: #dd6666;
+  border-radius: 0;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.btn-default:focus, .btn-default:hover {
+  background: #e27b7b;
+  color: #fff; }
+
+.btn-large {
+  width: 100%;
+  padding: 40px;
+  font-size: 26px; }
 
 /* Navbar */
 .navbar {
@@ -65,5 +104,12 @@ body {
   transform: translateY(30vw);
   height: 100%;
   color: #fff; }
+
+/* Sponsors */
+#sponsors {
+  margin-bottom: 20px;
+  text-align: center; }
+  #sponsors .sponsor img {
+    opacity: .8; }
 
 /*# sourceMappingURL=main.css.map */
