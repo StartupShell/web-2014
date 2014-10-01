@@ -20,10 +20,9 @@ h3 {
   font-weight: 600;
   font-size: 22px; }
 
-.container > .row {
+.row {
   margin-top: 20px; }
 
-/* Buttons */
 .btn {
   margin: 10px 15px 10px 0;
   outline: none;
@@ -37,7 +36,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 600; }
 
-.btn-default:focus, .btn-default:hover {
+.btn-default:hover {
   background: #e27b7b;
   color: #fff; }
 
@@ -51,29 +50,26 @@ h3 {
   background-color: #eeeeee;
   box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25); }
 
-.navbar .navbar-header .navbar-brand {
-  padding: 17px 15px; }
-  .navbar .navbar-header .navbar-brand img {
-    display: inline-block; }
-  .navbar .navbar-header .navbar-brand span {
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 20px;
-    margin-top: -7px;
-    line-height: 2.3; }
+.navbar-brand * {
+  display: inline-block; }
+.navbar-brand span {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: -5px;
+  line-height: 2.3; }
 
-.navbar .navbar-nav {
+.navbar-nav {
   float: right; }
-  .navbar .navbar-nav li a {
+  .navbar-nav li a {
     padding: 20px;
     text-transform: lowercase; }
-  .navbar .navbar-nav li a:hover {
-    background: white; }
+    .navbar-nav li a:hover {
+      background: white; }
 
-.navbar-default .navbar-nav > .active > a {
+.active {
   color: #666666; }
 
-.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+ul.navbar-nav:hover {
   color: #666666; }
 
 /* Video */
@@ -97,11 +93,10 @@ h3 {
     position: absolute;
     z-index: 0;
     min-width: 100%;
-    background: url(./images/timelapse.jpg); }
+    background: url("./images/timelapse.jpg"); }
 
 .jumbotron {
   background: none;
-  transform: translateY(30vw);
   height: 100%;
   color: #fff; }
 
