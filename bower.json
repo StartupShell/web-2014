@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "homepage": "https://github.com/StartupShell/shell-site",
   "authors": [
-    "jacksongeller <jacksongeller@gmail.com>"
+    "jacksongeller <jacksongeller@gmail.com>",
+    "chrisszeluga <chrisszeluga1@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
