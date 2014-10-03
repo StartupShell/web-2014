@@ -47,12 +47,15 @@ h3 {
 
 /* Navbar */
 .navbar {
-  background-color: #eeeeee;
-  box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25); }
+  background: none;
+  border: none; }
 
+.navbar-brand img {
+  height: 100%; }
 .navbar-brand * {
   display: inline-block; }
 .navbar-brand span {
+  color: #fff;
   font-size: 16px;
   margin-left: 20px;
   margin-top: -5px;
@@ -61,10 +64,12 @@ h3 {
 .navbar-nav {
   float: right; }
   .navbar-nav li a {
+    color: #fff;
     padding: 20px;
     text-transform: lowercase; }
     .navbar-nav li a:hover {
-      background: white; }
+      color: #e8d6d5;
+      background: none; }
 
 .active {
   color: #666666; }
@@ -93,12 +98,18 @@ ul.navbar-nav:hover {
     position: absolute;
     z-index: 0;
     min-width: 100%;
+    height: 100%;
     background: url("./images/timelapse.jpg"); }
 
 .jumbotron {
-  background: none;
-  height: 100%;
+  background: #dd6666 repeat;
+  height: 500px;
   color: #fff; }
+
+.promo {
+  background: #dd6666;
+  height: 200px;
+  width: 100%; }
 
 /* Sponsors */
 #sponsors {

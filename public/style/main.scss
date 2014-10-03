@@ -4,14 +4,13 @@ $text-color:#666666;
 
 $font: "Titillium Web", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-
 html {
-  height: 100%;
+  height:100%;
 }
 body {
   font-family: $font;
   font-size: 16px;
-  height: 100%;
+  height:100%;
   color: $text-color;
 }
 h2 {
@@ -58,16 +57,20 @@ h3 {
 /* Navbar */
 
 .navbar {
-  background-color: #eeeeee;
-  box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
+  background: none;
+  // box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
+  border: none;
 }
 
-
 .navbar-brand {
+  img {
+    height:100%;
+  }
   * {
     display: inline-block;
   }
   span {
+    color:#fff;
     font-size: 16px;
     margin-left: 20px;
     margin-top: -5px;
@@ -80,10 +83,12 @@ h3 {
   float: right;
   li {
     a {
+      color:#fff;
       padding: 20px;
       text-transform: lowercase;
       &:hover {
-        background: white;
+        color:#e8d6d5;
+        background: none;
       }
     }
   }
@@ -124,14 +129,19 @@ ul.navbar-nav {
     position: absolute;
     z-index: 0;
     min-width: 100%;
+    height:100%;
     background: url("./images/timelapse.jpg");
   }
 }
 .jumbotron {
-  background: none;
-  // transform: translateY(30vw);
-  height: 100%;
+  background: $primary-color repeat;
+  height: 500px;
   color: #fff;
+}
+.promo {
+  background: $primary-color;
+  height: 200px;
+  width:100%;
 }
 
 /* Sponsors */
