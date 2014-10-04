@@ -42,6 +42,9 @@ h3 {
   padding: 40px;
   font-size: 26px; }
 
+section, footer {
+  margin: 30px 0; }
+
 /* Navbar */
 .navbar {
   background: #dd6666;
@@ -87,10 +90,14 @@ ul.navbar-nav:hover {
 
 /* Content */
 .callout {
-  padding: 30px 0;
+  padding: 10px 0;
   color: #dd6666;
   font-size: 22px;
   text-align: center; }
+
+/* Ventures */
+#ventures .venture img:hover {
+  opacity: 0.8; }
 
 /* Sponsors */
 #sponsors {
