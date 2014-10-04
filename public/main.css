@@ -20,9 +20,6 @@ h3 {
   font-weight: 600;
   font-size: 22px; }
 
-.row {
-  margin-top: 20px; }
-
 .btn {
   margin: 10px 15px 10px 0;
   outline: none;
@@ -47,7 +44,7 @@ h3 {
 
 /* Navbar */
 .navbar {
-  background: none;
+  background: #dd6666;
   border: none; }
 
 .navbar-brand img {
@@ -77,39 +74,23 @@ h3 {
 ul.navbar-nav:hover {
   color: #666666; }
 
-/* Video */
-.video-container {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  min-height: 100%;
-  min-width: 100%;
-  overflow: hidden;
-  z-index: -100; }
-  .video-container .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background: linear-gradient(rgba(221, 102, 102, 0.5), rgba(221, 102, 102, 0.5)), rgba(0, 0, 0, 0.25); }
-  .video-container video {
-    position: absolute;
-    z-index: 0;
-    min-width: 100%;
-    height: 100%;
-    background: url("./images/timelapse.jpg"); }
-
 .jumbotron {
-  background: #dd6666 repeat;
-  height: 500px;
-  color: #fff; }
-
-.promo {
   background: #dd6666;
-  height: 200px;
-  width: 100%; }
+  max-height: 400px;
+  color: #fff;
+  padding-top: 0;
+  text-align: center; }
+  .jumbotron img#plant {
+    position: absolute;
+    top: 225px;
+    margin-left: -60px; }
+
+/* Content */
+.callout {
+  padding: 30px 0;
+  color: #dd6666;
+  font-size: 22px;
+  text-align: center; }
 
 /* Sponsors */
 #sponsors {
