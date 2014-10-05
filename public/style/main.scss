@@ -57,7 +57,8 @@ section, footer {
 /* Navbar */
 
 .navbar {
-  min-height: 60px;
+    z-index: 5;
+    min-height: 60px;
     background: $primary-color;
     // box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
     border: none;
@@ -82,8 +83,8 @@ section, footer {
         }
     }
     .navbar-collapse {
-      border:none;
-      box-shadow:none;
+        border: none;
+        box-shadow: none;
     }
     .navbar-nav {
         float: right;
@@ -114,10 +115,19 @@ ul.navbar-nav {
     color: #fff;
     padding-top: 0;
     text-align: center;
-    img#plant {
-        position: absolute;
-        top: 225px;
-        margin-left: -60px;
+    img {
+        z-index: 50;
+        position:relative;
+        &#light {
+            position: absolute;
+            left: 350px;
+            z-index: 100;
+        }
+        &#plant {
+            position: absolute;
+            top: 225px;
+            margin-left: -60px;
+        }
     }
 }
 /* Content */

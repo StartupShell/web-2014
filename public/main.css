@@ -51,6 +51,7 @@ section, footer {
 
 /* Navbar */
 .navbar {
+  z-index: 5;
   min-height: 60px;
   background: #dd6666;
   border: none; }
@@ -91,10 +92,17 @@ ul.navbar-nav:hover {
   color: #fff;
   padding-top: 0;
   text-align: center; }
-  .jumbotron img#plant {
-    position: absolute;
-    top: 225px;
-    margin-left: -60px; }
+  .jumbotron img {
+    z-index: 50;
+    position: relative; }
+    .jumbotron img#light {
+      position: absolute;
+      left: 350px;
+      z-index: 100; }
+    .jumbotron img#plant {
+      position: absolute;
+      top: 225px;
+      margin-left: -60px; }
 
 /* Content */
 .callout {
