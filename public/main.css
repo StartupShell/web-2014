@@ -51,29 +51,33 @@ section, footer {
 
 /* Navbar */
 .navbar {
+  min-height: 60px;
   background: #dd6666;
   border: none; }
-
-.navbar-brand img {
-  height: 100%; }
-.navbar-brand * {
-  display: inline-block; }
-.navbar-brand span {
-  color: #fff;
-  font-size: 16px;
-  margin-left: 20px;
-  margin-top: -5px;
-  line-height: 2.3; }
-
-.navbar-nav {
-  float: right; }
-  .navbar-nav li a {
+  .navbar .navbar-header .icon-bar {
+    background-color: #fff; }
+  .navbar .navbar-header .navbar-brand img {
+    height: 100%; }
+  .navbar .navbar-header .navbar-brand * {
+    display: inline-block; }
+  .navbar .navbar-header .navbar-brand span {
     color: #fff;
-    padding: 20px;
-    text-transform: lowercase; }
-    .navbar-nav li a:hover {
-      color: #e8d6d5;
-      background: none; }
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: -5px;
+    line-height: 2.3; }
+  .navbar .navbar-collapse {
+    border: none;
+    box-shadow: none; }
+  .navbar .navbar-nav {
+    float: right; }
+    .navbar .navbar-nav li a {
+      color: #fff;
+      padding: 20px;
+      text-transform: lowercase; }
+      .navbar .navbar-nav li a:hover {
+        color: #e8d6d5;
+        background: none; }
 
 .active {
   color: #666666; }

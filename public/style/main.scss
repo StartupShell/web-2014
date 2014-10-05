@@ -36,10 +36,10 @@ h3 {
     text-transform: uppercase;
     font-weight: 600;
     &:active, &:focus, &:visited {
-      background: $primary-color;
-      color:#fff;
-      box-shadow:none;
-      outline:none;
+        background: $primary-color;
+        color: #fff;
+        box-shadow: none;
+        outline: none;
     }
     &:hover {
         background: #e27b7b;
@@ -57,35 +57,45 @@ section, footer {
 /* Navbar */
 
 .navbar {
+  min-height: 60px;
     background: $primary-color;
     // box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
     border: none;
-}
-.navbar-brand {
-    img {
-        height: 100%;
+    .navbar-header {
+        .icon-bar {
+            background-color: #fff;
+        }
+        .navbar-brand {
+            img {
+                height: 100%;
+            }
+            * {
+                display: inline-block;
+            }
+            span {
+                color: #fff;
+                font-size: 16px;
+                margin-left: 20px;
+                margin-top: -5px;
+                line-height: 2.3;
+            }
+        }
     }
-    * {
-        display: inline-block;
+    .navbar-collapse {
+      border:none;
+      box-shadow:none;
     }
-    span {
-        color: #fff;
-        font-size: 16px;
-        margin-left: 20px;
-        margin-top: -5px;
-        line-height: 2.3;
-    }
-}
-.navbar-nav {
-    float: right;
-    li {
-        a {
-            color: #fff;
-            padding: 20px;
-            text-transform: lowercase;
-            &:hover {
-                color: #e8d6d5;
-                background: none;
+    .navbar-nav {
+        float: right;
+        li {
+            a {
+                color: #fff;
+                padding: 20px;
+                text-transform: lowercase;
+                &:hover {
+                    color: #e8d6d5;
+                    background: none;
+                }
             }
         }
     }
@@ -111,14 +121,15 @@ ul.navbar-nav {
     }
 }
 /* Content */
+
 .callout {
     padding: 10px 0;
     color: $primary-color;
     font-size: 22px;
     text-align: center;
 }
-
 /* Ventures */
+
 #ventures {
     .venture {
         img {
@@ -128,14 +139,14 @@ ul.navbar-nav {
         }
     }
 }
-
 /* Membership */
-#membership .no-apply {
-  margin-top:30px;
-  font-weight: 600;
-}
 
+#membership .no-apply {
+    margin-top: 30px;
+    font-weight: 600;
+}
 /* Sponsors */
+
 #sponsors {
     margin-bottom: 20px;
     text-align: center;
