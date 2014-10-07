@@ -86,23 +86,55 @@ section {
 ul.navbar-nav:hover {
   color: #666666; }
 
-.jumbotron {
-  background: #dd6666;
-  max-height: 400px;
-  color: #fff;
-  padding-top: 0;
-  text-align: center; }
-  .jumbotron img {
-    z-index: 50;
-    position: relative; }
-    .jumbotron img#light {
-      position: absolute;
-      left: 350px;
-      z-index: 100; }
-    .jumbotron img#plant {
-      position: absolute;
-      top: 225px;
-      margin-left: -60px; }
+/* Video */
+#mast {
+  height: 680px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  overflow: hidden;
+  position: relative;
+  max-height: 720px;
+  padding: 0;
+  margin: 0; }
+  #mast #mast_inner-1 {
+    overflow: hidden;
+    background: url("./images/timelapse.jpg") no-repeat;
+    background-size: cover; }
+    #mast #mast_inner-1 #mast_inner-2 {
+      min-width: 100%; }
+      #mast #mast_inner-1 #mast_inner-2 .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: linear-gradient(rgba(221, 102, 102, 0.5), rgba(221, 102, 102, 0.5)), rgba(0, 0, 0, 0.25); }
+      #mast #mast_inner-1 #mast_inner-2 video {
+        min-width: 100%;
+        max-width: 100%;
+        display: block;
+        z-index: 0; }
+      #mast #mast_inner-1 #mast_inner-2 img {
+        width: 100%; }
+  #mast .video-txt {
+    position: absolute;
+    top: 5%;
+    z-index: 15;
+    color: #fff;
+    width: 100%;
+    text-align: center; }
+    #mast .video-txt p {
+      font-size: 12rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0 0 -30px; }
+    #mast .video-txt img {
+      width: 70px;
+      height: 70px;
+      margin: 50px 0 0; }
 
 /* Content */
 .callout {
@@ -110,6 +142,8 @@ ul.navbar-nav:hover {
   color: #dd6666;
   font-size: 22px;
   text-align: center; }
+  .callout.chill {
+    padding: 90px 0 10px; }
 
 /* Ventures */
 #ventures .venture img:hover {
