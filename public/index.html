@@ -22,26 +22,6 @@
 
 <body>
 
-    <section id="mast">
-        <div id="mast_inner-1">
-            <div id="mast_inner-2">
-            <div class="overlay"></div>
-                <video autoplay loop>
-                    <source src="./images/timelapse.webm" type="video/webm">
-                    <source src="./images/timelapse.mp4" type="video/mp4">
-                    <source src="./images/timelapse.ogv" type="video/ogv">
-                    <img src="./images/timelapse.jpg" />
-                </video>
-            </div>
-        </div>
-        <div class="video-txt">
-            <p>Think.</p>
-            <p>Build.</p>
-            <p>Play.</p>
-            <img src="./images/arrow.svg" />
-        </div>
-    </section>
-
     <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -71,6 +51,35 @@
             <!--/.nav-collapse -->
         </div>
     </div>
+
+    <section id="mast">
+        <div id="mast_inner-1">
+            <div id="mast_inner-2">
+                <div class="overlay"></div>
+                <video autoplay loop>
+                    <source src="./images/timelapse.webm" type="video/webm">
+                        <source src="./images/timelapse.mp4" type="video/mp4">
+                            <source src="./images/timelapse.ogv" type="video/ogv">
+                                <img src="./images/timelapse.jpg" />
+                </video>
+            </div>
+        </div>
+        <div class="video-txt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-4">
+                        <p>Think.</p>
+                    </div>
+                    <div class="col-sm-12 col-xs-4">
+                        <p>Build.</p>
+                    </div>
+                    <div class="col-sm-12 col-xs-4">
+                        <p>Play.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <div class="container">
@@ -176,19 +185,7 @@
             <div class="col-sm-6" id="events">
                 <h2>Events</h2>
                 <div class="event">
-                    <h3>Shell Talk 022: Future of Information Alliance Grant</h3>
-                    <p>September 30, 7:30 PM @ Startup Shell</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolores nemo aperiam facere, voluptatibus sapiente similique qui, explicabo quasi aspernatur recusandae veritatis.</p>
-                </div>
-                <div class="event">
-                    <h3>Shell Talk 022: Future of Information Alliance Grant</h3>
-                    <p>September 30, 7:30 PM @ Startup Shell</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolores nemo aperiam facere, voluptatibus sapiente similique qui, explicabo quasi aspernatur recusandae veritatis.</p>
-                </div>
-                <div class="event">
-                    <h3>Shell Talk 022: Future of Information Alliance Grant</h3>
-                    <p>September 30, 7:30 PM @ Startup Shell</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolores nemo aperiam facere, voluptatibus sapiente similique qui, explicabo quasi aspernatur recusandae veritatis.</p>
+                    <p>No new upcoming events.</p>
                 </div>
                 <button class="btn btn-default" href="#" role="button">Give A Shell Talk</button>
             </div>
@@ -241,8 +238,11 @@
     <footer>
         <div class="container">
             <div class="col-xs-12">
-                <input type="email" placeholder="email address" />
-                <p>Put in your email, press enter, enjoy our newsletter.</p>
+                <form id="mc-form">
+                    <input id="mc-email" type="email" placeholder="email address">
+                    <label for="mc-email"></label>
+                </form>
+                <p>Enter your email, press enter, enjoy our newsletter.</p>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="copy">&copy; 2014 Startup Shell, University of Maryland</div>
@@ -267,6 +267,7 @@
 
     <script src="./bower/jquery/dist/jquery.min.js"></script>
     <script src="./bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower/ajaxchimp/jquery.ajaxchimp.min.js"></script>
     <script src="./main.js"></script>
 </body>
 

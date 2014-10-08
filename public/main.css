@@ -20,6 +20,12 @@ h3 {
   font-weight: 600;
   font-size: 22px; }
 
+a {
+  color: #dd6666; }
+  a:hover {
+    text-decoration: none;
+    color: #e27b7b; }
+
 .btn {
   margin: 10px 15px 10px 0;
   outline: none;
@@ -51,10 +57,14 @@ section {
 
 /* Navbar */
 .navbar {
-  z-index: 5;
+  z-index: 15;
   min-height: 60px;
-  background: #dd6666;
+  border-radius: 0;
+  margin: 0;
   border: none; }
+  .navbar.chill {
+    background: #dd6666;
+    transition: all 0.2s ease; }
   .navbar .navbar-header .icon-bar {
     background-color: #fff; }
   .navbar .navbar-header .navbar-brand img {
@@ -95,7 +105,6 @@ ul.navbar-nav:hover {
   -webkit-background-size: cover;
   overflow: hidden;
   position: relative;
-  max-height: 720px;
   padding: 0;
   margin: 0; }
   #mast #mast_inner-1 {
@@ -116,21 +125,23 @@ ul.navbar-nav:hover {
         min-width: 100%;
         max-width: 100%;
         display: block;
-        z-index: 0; }
+        z-index: 5; }
       #mast #mast_inner-1 #mast_inner-2 img {
         width: 100%; }
   #mast .video-txt {
-    position: absolute;
-    top: 5%;
     z-index: 15;
     color: #fff;
-    width: 100%;
-    text-align: center; }
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%; }
     #mast .video-txt p {
-      font-size: 12rem;
+      font-size: 9vw;
       font-weight: 600;
       text-transform: uppercase;
-      margin: 0 0 -30px; }
+      margin: 0 0 -30px;
+      text-align: center; }
     #mast .video-txt img {
       width: 70px;
       height: 70px;
@@ -142,13 +153,12 @@ ul.navbar-nav:hover {
   color: #dd6666;
   font-size: 22px;
   text-align: center; }
-  .callout.chill {
-    padding: 90px 0 10px; }
 
 /* Ventures */
 #ventures .venture img:hover {
   opacity: 0.8; }
 
+/* Events */
 /* Membership */
 #membership .no-apply {
   margin-top: 30px;

@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200);
 $primary-color:#dd6666;
+$primary-color-light:#e27b7b;
 $text-color:#666666;
 $font:"Titillium Web", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
 html {
@@ -23,6 +24,13 @@ h3 {
     font-weight: 600;
     font-size: 22px;
 }
+a {
+    color: $primary-color;
+    &:hover {
+        text-decoration: none;
+        color: $primary-color-light;
+    }
+}
 .btn {
     margin: 10px 15px 10px 0;
     outline: none;
@@ -42,7 +50,7 @@ h3 {
         outline: none;
     }
     &:hover {
-        background: #e27b7b;
+        background: $primary-color-light;
         color: #fff;
     }
 }
@@ -57,11 +65,16 @@ section {
 /* Navbar */
 
 .navbar {
-    z-index: 5;
+    z-index: 15;
     min-height: 60px;
-    background: $primary-color;
+    border-radius: 0;
+    margin: 0;
     // box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
     border: none;
+    &.chill {
+        background: $primary-color;
+        transition: all 0.2s ease;
+    }
     .navbar-header {
         .icon-bar {
             background-color: #fff;
@@ -119,7 +132,6 @@ ul.navbar-nav {
     -webkit-background-size: cover;
     overflow: hidden;
     position: relative;
-    max-height: 720px;
     padding: 0;
     margin: 0;
     #mast_inner-1 {
@@ -141,7 +153,7 @@ ul.navbar-nav {
                 min-width: 100%;
                 max-width: 100%;
                 display: block;
-                z-index: 0;
+                z-index: 5;
             }
             img {
                 width: 100%;
@@ -149,17 +161,19 @@ ul.navbar-nav {
         }
     }
     .video-txt {
-        position: absolute;
-        top: 5%;
         z-index: 15;
         color: #fff;
-        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         text-align: center;
+        width: 100%;
         p {
-            font-size: 12rem;
+            font-size: 9vw;
             font-weight: 600;
             text-transform: uppercase;
             margin: 0 0 -30px;
+            text-align: center;
         }
         img {
             width: 70px;
@@ -175,9 +189,6 @@ ul.navbar-nav {
     color: $primary-color;
     font-size: 22px;
     text-align: center;
-    &.chill {
-        padding: 90px 0 10px;
-    }
 }
 /* Ventures */
 
@@ -190,6 +201,9 @@ ul.navbar-nav {
         }
     }
 }
+/* Events */
+
+
 /* Membership */
 
 #membership .no-apply {
