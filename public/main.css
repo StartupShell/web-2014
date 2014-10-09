@@ -159,6 +159,9 @@ ul.navbar-nav:hover {
   opacity: 0.8; }
 
 /* Events */
+#events .event a {
+  color: inherit; }
+
 /* Membership */
 #membership .no-apply {
   margin-top: 30px;
