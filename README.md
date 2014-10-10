@@ -18,6 +18,11 @@ Sass
 $ [sudo] gem install sass
 ```
 
+node
+```
+$ [sudo] npm i
+```
+
 
 
 
