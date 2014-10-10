@@ -1,0 +1,259 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200);
+$primary-color:#dd6666;
+$primary-color-light:#e27b7b;
+$text-color:#666666;
+$font:"Titillium Web", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+html {
+    height: 100%;
+}
+body {
+    font-family: $font;
+    font-size: 16px;
+    height: 100%;
+    color: $text-color;
+}
+h2 {
+    font-size: 36px;
+    border-bottom: 1px #eeeeee solid;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+h3 {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 22px;
+}
+a {
+    color: $primary-color;
+    &:hover {
+        text-decoration: none;
+        color: $primary-color-light;
+    }
+}
+.btn {
+    margin: 10px 15px 10px 0;
+    outline: none;
+    border: none;
+}
+.btn-default {
+    background: $primary-color;
+    border-radius: 0;
+    padding: 15px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    &:active, &:focus, &:visited {
+        background: $primary-color;
+        color: #fff;
+        box-shadow: none;
+        outline: none;
+    }
+    &:hover {
+        background: $primary-color-light;
+        color: #fff;
+    }
+}
+.btn-large {
+    width: 100%;
+    padding: 40px;
+    font-size: 26px;
+}
+section {
+    margin: 30px 0;
+}
+/* Navbar */
+
+.navbar {
+    z-index: 15;
+    @media (max-width:768px) {
+        z-index: 20;
+    }
+    min-height: 60px;
+    border-radius: 0;
+    margin: 0;
+    // box-shadow: 0 -0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
+    border: none;
+    &.chill {
+        background: $primary-color;
+        transition: all 0.2s ease;
+    }
+    .navbar-header {
+        .icon-bar {
+            background-color: #fff;
+        }
+        .navbar-brand {
+            img {
+                height: 100%;
+            }
+            * {
+                display: inline-block;
+            }
+            span {
+                color: #fff;
+                font-size: 16px;
+                margin-left: 20px;
+                margin-top: -5px;
+                line-height: 2.3;
+            }
+        }
+    }
+    .navbar-collapse {
+        border: none;
+        box-shadow: none;
+        z-index: 20;
+        ul {
+        @media (max-width:768px) {
+            background: $primary-color;
+        }
+        }
+    }
+    .navbar-nav {
+        float: right;
+        li {
+            a {
+                color: #fff;
+                padding: 20px;
+                text-transform: lowercase;
+                &:hover {
+                    color: #e8d6d5;
+                    background: none;
+                }
+            }
+        }
+    }
+}
+.active {
+    color: $text-color;
+}
+ul.navbar-nav {
+    &:hover {
+        color: $text-color;
+    }
+}
+/* Video */
+
+#mast {
+    height: 680px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    #mast_inner-1 {
+        overflow: hidden;
+        background: url("./images/timelapse.jpg") no-repeat;
+        background-size: cover;
+        #mast_inner-2 {
+            min-width: 100%;
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                background: linear-gradient(rgba(221, 102, 102, 0.5), rgba(221, 102, 102, 0.5)), rgba(0, 0, 0, 0.25);
+            }
+            video {
+                min-width: 100%;
+                max-width: 100%;
+                display: block;
+                z-index: 5;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .video-txt {
+        z-index: 15;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        width: 100%;
+        p {
+            font-size: 9vw;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 0 -30px;
+            text-align: center;
+        }
+        img {
+            width: 70px;
+            height: 70px;
+            margin: 50px 0 0;
+        }
+    }
+}
+/* Content */
+
+.callout {
+    padding: 10px 0;
+    color: $primary-color;
+    font-size: 22px;
+    text-align: center;
+}
+/* Ventures */
+
+#ventures {
+    .venture {
+        img {
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+/* Events */
+#events {
+    .event {
+        a {
+            color: inherit;
+        }
+    }
+}
+
+/* Membership */
+
+#membership .no-apply {
+    margin-top: 30px;
+    font-weight: 600;
+}
+/* Sponsors */
+
+#sponsors {
+    margin-bottom: 20px;
+    text-align: center;
+    .sponsor img {
+        opacity: .8;
+    }
+}
+/* Footer */
+
+footer {
+    background-color: #666666;
+    color: white;
+    padding: 30px;
+    input {
+        padding-top: 15px;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 3rem;
+        color: #eeeeee;
+        border-bottom: 1px solid #999999;
+        background-color: #666666;
+        font-family: "Titillium Web";
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .copy {
+        margin-top: 15px;
+    }
+}

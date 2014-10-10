@@ -1,0 +1,22 @@
+{
+  "name": "shell-site",
+  "version": "0.0.0",
+  "homepage": "https://github.com/StartupShell/shell-site",
+  "authors": [
+    "jacksongeller <jacksongeller@gmail.com>",
+    "chrisszeluga <chrisszeluga1@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.1"
+  }
+}

@@ -1,12 +1,34 @@
 ## Local Set Up
+make sure you have the following installed
 
-    git clone this_repo
-    cd this_repo
-    npm install
-    gulp
-    
-    
-    go to localhost:3000 in your browser
+* bower
+* sass
 
 
-    make sure to update node and npm.....brent
+
+If not, install them
+
+Bower
+```
+$ npm install bower -g
+```
+
+Sass
+```
+$ [sudo] gem install sass
+```
+
+
+
+
+## Compiling & Running
+
+To compile sass
+```
+$ make sass
+```
+
+To serve it up
+```
+$ make server
+```
