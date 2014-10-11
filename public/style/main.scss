@@ -60,7 +60,7 @@ a {
     font-size: 26px;
 }
 section {
-    margin: 30px 0;
+    margin: 50px 0;
 }
 /* Navbar */
 
@@ -178,7 +178,7 @@ ul.navbar-nav {
         text-align: center;
         width: 100%;
         p {
-            font-size: 9vw;
+            font-size: 6vw;
             font-weight: 600;
             text-transform: uppercase;
             margin: 0 0 -30px;
@@ -194,10 +194,11 @@ ul.navbar-nav {
 /* Content */
 
 .callout {
-    padding: 10px 0;
+    padding: 30px 0;
     color: $primary-color;
     font-size: 22px;
     text-align: center;
+    margin-bottom: -30px;
 }
 /* Ventures */
 
@@ -240,6 +241,7 @@ footer {
     background-color: #666666;
     color: white;
     padding: 30px;
+    margin:50px 0 0;
     input {
         padding-top: 15px;
         border: none;
