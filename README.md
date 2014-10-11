@@ -35,5 +35,5 @@ $ make sass
 
 To serve it up
 ```
-$ make server
+$ node server 
 ```
