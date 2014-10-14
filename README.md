@@ -1,39 +1,28 @@
 ## Local Set Up
-make sure you have the following installed
+Make sure you have the following installed
 
 * bower
 * sass
 
-
-
 If not, install them
 
-Bower
-```
-$ npm install bower -g
-```
+`$ [sudo] npm install bower -g`
+`$ [sudo] gem install sass`
 
-Sass
-```
-$ [sudo] gem install sass
-```
 
-node
-```
-$ [sudo] npm i
-```
+
+
+
+
+## Install dependencies
+`$ [sudo] npm i && [sudo] bower i`
 
 
 
 
 ## Compiling & Running
 
-To compile sass
-```
-$ make sass
-```
+*in separate sessions*
 
-To serve it up
-```
-$ node server 
-```
+`$ make sass`
+`$ make server`
