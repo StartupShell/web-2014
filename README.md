@@ -7,6 +7,7 @@ Make sure you have the following installed
 If not, install them
 
 `$ [sudo] npm install bower -g`
+
 `$ [sudo] gem install sass`
 
 
@@ -25,4 +26,5 @@ If not, install them
 *in separate sessions*
 
 `$ make sass`
+
 `$ make server`
