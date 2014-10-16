@@ -180,7 +180,8 @@ ul.navbar-nav:hover {
   margin-bottom: 20px;
   text-align: center; }
   #sponsors .sponsor img {
-    opacity: .8; }
+    opacity: .8;
+    max-width: 152px; }
 
 /* Footer */
 footer {
