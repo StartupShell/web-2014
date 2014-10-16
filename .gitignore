@@ -1,6 +1,8 @@
 node_modules
+bower_components
+dist
 *.swp
 .DS_Store
 .sass-cache
 **/*.map
-dist
+
