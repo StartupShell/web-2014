@@ -231,9 +231,15 @@ ul.navbar-nav {
 #sponsors {
     margin-bottom: 20px;
     text-align: center;
+    .sponsor {
+        line-height: 60px;
+    }
     .sponsor img {
         opacity: .8;
         max-width: 152px;
+         -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        filter: grayscale(100%);
     }
 }
 /* Footer */
