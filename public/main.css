@@ -58,6 +58,21 @@ a {
     background: #dd6666;
     color: #fff; }
 
+.btn-primary {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 0;
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600; }
+  .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background: #fff;
+    color: #dd6666;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #fff; }
+
 .btn-large {
   width: 100%;
   padding: 40px;
@@ -162,7 +177,7 @@ ul.navbar-nav:hover {
       text-align: center; }
     #mast .video-txt .callout {
       color: #fff;
-      font-size: 22px;
+      font-size: 2em;
       text-align: center; }
     #mast .video-txt img {
       width: 70px;

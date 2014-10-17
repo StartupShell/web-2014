@@ -65,6 +65,22 @@ a {
         color: #fff;
     }
 }
+.btn-primary {
+    background: none;
+    border:1px solid #fff;
+    border-radius: 0;
+    padding: 15px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    &:hover, &:active, &:focus {
+        background: #fff;
+        color: $primary-color;
+        box-shadow: none;
+        outline: none;
+        border:1px solid #fff;
+    }
+}
 .btn-large {
     width: 100%;
     padding: 40px;
@@ -198,7 +214,7 @@ ul.navbar-nav {
         .callout {
             // padding: 30px 0;
             color: $white;
-            font-size: 22px;
+            font-size: 2em;
             text-align: center;
             // margin-bottom: -30px;
         }
