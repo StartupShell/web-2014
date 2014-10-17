@@ -64,6 +64,7 @@ jQuery(function(){
       // Source: http://sajjadhossain.com/2008/10/31/javascript-string-trimming-and-padding/
       function lpad(str, pad_string, length) {
         var str = new String(str);
+
         while (str.length < length)
           str = pad_string + str;
         return str;
@@ -82,6 +83,7 @@ jQuery(function(){
         // Format the date string
         var d = new Date(item.gd$when[0].startTime);
         var d_string = months[d.getMonth()] + ' ' + d.getDate();
+
         if(d.getHours() != 0 || d.getMinutes() != 0) {
           d_string = d_string + ', ' + lpad(d.getHours(), '0', 2) + ':' + lpad(d.getMinutes(), '0', 2);
         };
