@@ -1,7 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700);
+@import 'mixins';
 $primary-color:#dd6666;
 $primary-color-light:#e27b7b;
 $text-color:#666666;
+$white:#fff;
 $font:"Titillium Web", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
 html {
     height: 100%;
@@ -35,6 +37,7 @@ a {
     margin: 10px 15px 10px 0;
     outline: none;
     border: none;
+    @include border-radius(20px);
 }
 .btn-default {
     background: $primary-color;
@@ -51,6 +54,14 @@ a {
     }
     &:hover {
         background: $primary-color-light;
+        color: #fff;
+    }
+}
+.btn-inverse {
+    background: $white;
+    color: $primary-color;
+    &:active, &:focus, &:visited {
+        background: $primary-color;
         color: #fff;
     }
 }
@@ -177,12 +188,19 @@ ul.navbar-nav {
         transform: translateY(-50%);
         text-align: center;
         width: 100%;
-        p {
+        h1 {
             font-size: 6vw;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
-            margin: 0 0 -30px;
+            margin: 0 -200px -30px;
             text-align: center;
+        }
+        .callout {
+            // padding: 30px 0;
+            color: $white;
+            font-size: 22px;
+            text-align: center;
+            // margin-bottom: -30px;
         }
         img {
             width: 70px;
@@ -191,15 +209,9 @@ ul.navbar-nav {
         }
     }
 }
+
 /* Content */
 
-.callout {
-    padding: 30px 0;
-    color: $primary-color;
-    font-size: 22px;
-    text-align: center;
-    margin-bottom: -30px;
-}
 /* Ventures */
 
 #ventures {

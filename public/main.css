@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700);
 html {
   height: 100%; }
 
@@ -29,7 +29,11 @@ a {
 .btn {
   margin: 10px 15px 10px 0;
   outline: none;
-  border: none; }
+  border: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
 
 .btn-default {
   background: #dd6666;
@@ -45,6 +49,13 @@ a {
     outline: none; }
   .btn-default:hover {
     background: #e27b7b;
+    color: #fff; }
+
+.btn-inverse {
+  background: #fff;
+  color: #dd6666; }
+  .btn-inverse:active, .btn-inverse:focus, .btn-inverse:visited {
+    background: #dd6666;
     color: #fff; }
 
 .btn-large {
@@ -143,11 +154,15 @@ ul.navbar-nav:hover {
     transform: translateY(-50%);
     text-align: center;
     width: 100%; }
-    #mast .video-txt p {
+    #mast .video-txt h1 {
       font-size: 6vw;
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase;
-      margin: 0 0 -30px;
+      margin: 0 -200px -30px;
+      text-align: center; }
+    #mast .video-txt .callout {
+      color: #fff;
+      font-size: 22px;
       text-align: center; }
     #mast .video-txt img {
       width: 70px;
@@ -155,13 +170,6 @@ ul.navbar-nav:hover {
       margin: 50px 0 0; }
 
 /* Content */
-.callout {
-  padding: 30px 0;
-  color: #dd6666;
-  font-size: 22px;
-  text-align: center;
-  margin-bottom: -30px; }
-
 /* Ventures */
 #ventures .venture img:hover {
   opacity: 0.8; }
