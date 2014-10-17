@@ -191,7 +191,7 @@ ul.navbar-nav:hover {
     line-height: 60px; }
   #sponsors .sponsor img {
     opacity: .8;
-    max-width: 152px;
+    max-width: 145px;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%); }
