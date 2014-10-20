@@ -5,4 +5,3 @@ node_modules
 **/*.map
 *.log
 deploy_key
-.travis/deploy_key
