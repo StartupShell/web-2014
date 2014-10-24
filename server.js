@@ -5,7 +5,6 @@ app.use(express.Router());
 app.use(express.static(__dirname +'/public', { maxAge: 86400000 }));
 app.use(express.Router());
 
-
 // redirect ventures
 
 app.get('/docs/ventures', function(req, res) {
