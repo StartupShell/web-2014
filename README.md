@@ -11,14 +11,8 @@ If not, install them
 `$ [sudo] gem install sass`
 
 
-
-
-
-
 ## Install dependencies
 `$ [sudo] npm i && [sudo] bower i`
-
-
 
 
 ## Compiling & Running
