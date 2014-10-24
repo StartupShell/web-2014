@@ -24,6 +24,11 @@ app.get('/talk', function(req, res) {
   res.redirect('https://docs.google.com/forms/d/1ItpxO38vplZ1nvvy02exZZFWdZUi6Cryeik7GTNP-sM/viewform');
 });
 
+// redirect apply
+
+app.get('/apply', function(req, res) {
+  res.redirect('https://docs.google.com/forms/d/14qk71AGmVgy7VXs1x9sUbM3NptFhC9US8ei3FqwTUaU/viewform');
+});
 
 
 app.listen(8000);
