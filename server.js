@@ -30,5 +30,9 @@ app.get('/apply', function(req, res) {
   res.redirect('https://docs.google.com/forms/d/14qk71AGmVgy7VXs1x9sUbM3NptFhC9US8ei3FqwTUaU/viewform');
 });
 
+app.get('/*', function(req, res) {
+  res.redirect('/');
+})
+
 
 app.listen(8000);
