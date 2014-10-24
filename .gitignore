@@ -1,7 +1,7 @@
 node_modules
+bower
 *.swp
 .DS_Store
 .sass-cache
 **/*.map
 *.log
-deploy_key

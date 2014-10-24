@@ -10,10 +10,10 @@ function stickyNav() {
 }
 
 $(window).scroll(function() {
-    stickyNav();
+  stickyNav();
 });
 $(document).ready(function() {
-    stickyNav();
+  stickyNav();
 });
 
 
