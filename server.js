@@ -23,6 +23,10 @@ app.get('/docs/members', function(req, res) {
 app.get('/talk', function(req, res) {
   res.redirect('https://docs.google.com/forms/d/1ItpxO38vplZ1nvvy02exZZFWdZUi6Cryeik7GTNP-sM/viewform');
 });
+app.get('/talks', function(req, res) {
+  res.redirect('https://docs.google.com/forms/d/1ItpxO38vplZ1nvvy02exZZFWdZUi6Cryeik7GTNP-sM/viewform');
+});
+
 
 // redirect apply
 
