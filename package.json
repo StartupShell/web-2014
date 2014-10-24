@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "exit 0",
-    "start": "node server.js"
+    "start": "node server.js",
+    "sass": "sass --watch public/style/main.scss:public/main.css"
   },
   "repository": {
     "type": "git",

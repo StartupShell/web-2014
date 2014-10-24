@@ -25,6 +25,6 @@ If not, install them
 
 *in separate sessions*
 
-`$ make sass`
+`$ npm run sass`
 
-`$ make server`
+`$ npm run server`
