@@ -18,6 +18,12 @@ app.get('/docs/members', function(req, res) {
   res.redirect('https://docs.google.com/spreadsheet/ccc?key=0Al8ZtGHhkmyQdGV2N2V2bW9ueVR5T2VfWXlfak9pUUE&usp=sharing');
 });
 
+// redirect talks
+
+app.get('/talk', function(req, res) {
+  res.redirect('https://docs.google.com/forms/d/1ItpxO38vplZ1nvvy02exZZFWdZUi6Cryeik7GTNP-sM/viewform');
+});
+
 
 
 app.listen(8000);
