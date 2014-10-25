@@ -5,6 +5,7 @@ node_js:
 
 before_install:
 - openssl aes-256-cbc -K $encrypted_5fcd1d436920_key -iv $encrypted_5fcd1d436920_iv -in deploy_key.enc -out deploy_key -d
+- echo -e "104.131.88.177 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1SdIhZeBOHtM4vopxbpi0Gvy0tkkI8l9pZVeXsFiggX2mp6N7ROVLsxRAL/5IftxQIi+xkdzwm3TPDkHsWuG5JuEK8+p8V5cnMaFKVAcVwGouUV/QnNAvD10MgCncD3yT+sh23LdCEWrucS/KlBv7nGW9w14+GWyvI4js2hryjI/KdKonOaLlLB8yCDqOTggtIY4y53yhXbOsFJUCUddqc40vakEZxQwvLJV24KU0FNWs96yupVnO0ctEDbezMx96wKr5j9HopFo+JRcw8IpZrLN7knntYXpb7XGU140j3grWzCz2XuUWKjrAe305LidlbIzPKnqecwPMxR766q+9" >> ~/.ssh/known_hosts
 
 after_success:
 - chmod 600 deploy_key
