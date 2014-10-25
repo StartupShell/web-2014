@@ -5,3 +5,4 @@ bower
 .sass-cache
 **/*.map
 *.log
+deploy_key

@@ -20,3 +20,6 @@ If not, install them
 `$ npm run sass`
 
 `$ npm run server`
+
+
+## Anything on master get's auto deployed
