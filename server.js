@@ -17,6 +17,12 @@ app.get('/docs/members', function(req, res) {
   res.redirect('https://docs.google.com/spreadsheet/ccc?key=0Al8ZtGHhkmyQdGV2N2V2bW9ueVR5T2VfWXlfak9pUUE&usp=sharing');
 });
 
+// redirect members
+
+app.get('/docs/resources', function(req, res) {
+  res.redirect('https://docs.google.com/a/terpmail.umd.edu/spreadsheets/d/1lFM5vy8iIljtcseX-Q4nQn89HF6vAI9vcF6Ky9VcFqU/edit?usp=sharing');
+});
+
 // redirect talks
 
 app.get('/talk', function(req, res) {
@@ -32,14 +38,10 @@ app.get('/apply', function(req, res) {
   res.redirect('https://docs.google.com/forms/d/14qk71AGmVgy7VXs1x9sUbM3NptFhC9US8ei3FqwTUaU/viewform');
 });
 
+// wildcard redirect
+
 app.get('/*', function(req, res) {
   res.redirect('/');
-});
-
-// redirect resources
-
-app.get('/docs/resources', function(req, res) {
-  res.redirect('https://docs.google.com/a/terpmail.umd.edu/spreadsheets/d/1lFM5vy8iIljtcseX-Q4nQn89HF6vAI9vcF6Ky9VcFqU/edit?usp=sharing');
 });
 
 
