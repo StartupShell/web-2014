@@ -17,7 +17,7 @@ app.get('/docs/members', function(req, res) {
   res.redirect('https://docs.google.com/spreadsheet/ccc?key=0Al8ZtGHhkmyQdGV2N2V2bW9ueVR5T2VfWXlfak9pUUE&usp=sharing');
 });
 
-// redirect members
+// redirect resources
 
 app.get('/docs/resources', function(req, res) {
   res.redirect('https://docs.google.com/a/terpmail.umd.edu/spreadsheets/d/1lFM5vy8iIljtcseX-Q4nQn89HF6vAI9vcF6Ky9VcFqU/edit?usp=sharing');
