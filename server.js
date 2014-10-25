@@ -26,7 +26,6 @@ app.get('/talks', function(req, res) {
   res.redirect('https://docs.google.com/forms/d/1ItpxO38vplZ1nvvy02exZZFWdZUi6Cryeik7GTNP-sM/viewform');
 });
 
-
 // redirect apply
 
 app.get('/apply', function(req, res) {
@@ -35,6 +34,12 @@ app.get('/apply', function(req, res) {
 
 app.get('/*', function(req, res) {
   res.redirect('/');
+});
+
+// redirect resources
+
+app.get('/docs/resources', function(req, res) {
+  res.redirect('https://docs.google.com/a/terpmail.umd.edu/spreadsheets/d/1lFM5vy8iIljtcseX-Q4nQn89HF6vAI9vcF6Ky9VcFqU/edit?usp=sharing');
 });
 
 
