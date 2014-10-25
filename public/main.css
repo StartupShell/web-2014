@@ -93,6 +93,8 @@ section {
       z-index: 20; } }
   .navbar.chill {
     background: #dd6666;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
     transition: all 0.2s ease; }
   .navbar .navbar-header .icon-bar {
     background-color: #fff; }
@@ -133,9 +135,7 @@ ul.navbar-nav:hover {
 #mast {
   height: 680px;
   background-repeat: no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
+  @inclue background-size(cover);
   overflow: hidden;
   position: relative;
   padding: 0;
@@ -143,7 +143,7 @@ ul.navbar-nav:hover {
   #mast #mast_inner-1 {
     overflow: hidden;
     background: url("./images/timelapse.jpg") no-repeat;
-    background-size: cover; }
+    @inclue background-size(cover); }
     #mast #mast_inner-1 #mast_inner-2 {
       min-width: 100%; }
       #mast #mast_inner-1 #mast_inner-2 .overlay {
@@ -166,6 +166,10 @@ ul.navbar-nav:hover {
     color: #fff;
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
     width: 100%; }
@@ -186,8 +190,12 @@ ul.navbar-nav:hover {
 
 /* Content */
 /* Ventures */
-#ventures .venture img:hover {
-  opacity: 0.8; }
+#ventures .venture img {
+  max-width: 100%;
+  height: auto;
+  text-align: center; }
+  #ventures .venture img:hover {
+    opacity: 0.8; }
 
 /* Events */
 #events .event a {
@@ -203,13 +211,16 @@ ul.navbar-nav:hover {
   margin-bottom: 20px;
   text-align: center; }
   #sponsors .sponsor {
-    line-height: 60px; }
-  #sponsors .sponsor img {
-    opacity: .8;
-    max-width: 145px;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%); }
+    line-height: 80px;
+    height: 80px; }
+    #sponsors .sponsor img {
+      max-width: 100%;
+      height: auto;
+      text-align: center;
+      opacity: .8;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      margin-bottom: 20px; }
 
 /* Footer */
 footer {

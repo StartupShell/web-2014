@@ -78,7 +78,7 @@ jQuery(function(){
         var event_url = jQuery.trim(item.content.$t);
         var event_header = item.title.$t;
         if(event_url.length > 0) {
-          event_header = "<a href='" + event_url + "'>" + event_header + "</a>";
+          event_header = "<a href='" + item.link[0].href + "' target='_blank'>" + event_header + "</a>";
         };
         // Format the date string
         var d = new Date(item.gd$when[0].startTime);

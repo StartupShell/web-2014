@@ -1,3 +1,4 @@
+@import '../bower/bourbon/dist/bourbon';
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700);
 @import 'mixins';
 $primary-color:#dd6666;
@@ -103,7 +104,7 @@ section {
     border: none;
     &.chill {
         background: $primary-color;
-        transition: all 0.2s ease;
+        @include transition(all 0.2s ease);
     }
     .navbar-header {
         .icon-bar {
@@ -163,9 +164,7 @@ ul.navbar-nav {
 #mast {
     height: 680px;
     background-repeat: no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+    @inclue background-size(cover);
     overflow: hidden;
     position: relative;
     padding: 0;
@@ -173,7 +172,7 @@ ul.navbar-nav {
     #mast_inner-1 {
         overflow: hidden;
         background: url("./images/timelapse.jpg") no-repeat;
-        background-size: cover;
+        @inclue background-size(cover);
         #mast_inner-2 {
             min-width: 100%;
             .overlay {
@@ -201,7 +200,7 @@ ul.navbar-nav {
         color: #fff;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        @include transform (translateY(-50%));
         text-align: center;
         width: 100%;
         h1 {
@@ -233,6 +232,9 @@ ul.navbar-nav {
 #ventures {
     .venture {
         img {
+            max-width:100%;
+            height:auto;
+            text-align:center;
             &:hover {
                 opacity: 0.8;
             }
@@ -260,14 +262,18 @@ ul.navbar-nav {
     margin-bottom: 20px;
     text-align: center;
     .sponsor {
-        line-height: 60px;
-    }
-    .sponsor img {
-        opacity: .8;
-        max-width: 145px;
-         -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        filter: grayscale(100%);
+        line-height: 80px;
+        height:80px;
+        img {
+            max-width:100%;
+            height:auto;
+            text-align:center;
+            opacity: .8;
+            @include filter(grayscale(100%));
+            margin: {
+                bottom: 20px;
+            }
+        }
     }
 }
 /* Footer */
