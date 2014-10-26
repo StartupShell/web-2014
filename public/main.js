@@ -55,6 +55,18 @@ $(function() {
 
 
 //GOOGLE EVENTS
+function tConvert (time) {
+  // Check correct time format and split into components
+  time = time.toString ().match (/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
+
+  if (time.length > 1) { // If time format correct
+    time = time.slice (1);  // Remove full string match value
+    time[5] = +time[0] < 12 ? ' AM' : ' PM'; // Set AM/PM
+    time[0] = +time[0] % 12 || 12; // Adjust hours
+  }
+  return time.join (''); // return adjusted time or original string
+}
+
 jQuery(function(){
 
     // Get list of upcoming iCal events formatted in JSON
@@ -85,7 +97,7 @@ jQuery(function(){
         var d_string = months[d.getMonth()] + ' ' + d.getDate();
 
         if(d.getHours() != 0 || d.getMinutes() != 0) {
-          d_string = d_string + ', ' + lpad(d.getHours(), '0', 2) + ':' + lpad(d.getMinutes(), '0', 2);
+          d_string = d_string + ', ' + tConvert(lpad(d.getHours(), '0', 2) + ':' + lpad(d.getMinutes(), '0', 2));
         };
         // Render the event
         jQuery("#events .event").last().before(

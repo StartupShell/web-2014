@@ -193,7 +193,9 @@ ul.navbar-nav:hover {
 #ventures .venture img {
   max-width: 100%;
   height: auto;
-  text-align: center; }
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px; }
   #ventures .venture img:hover {
     opacity: 0.8; }
 
