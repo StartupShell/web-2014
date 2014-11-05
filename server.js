@@ -38,6 +38,16 @@ app.get('/apply', function(req, res) {
   res.redirect('https://docs.google.com/forms/d/14qk71AGmVgy7VXs1x9sUbM3NptFhC9US8ei3FqwTUaU/viewform');
 });
 
+// redirect launch umd
+
+app.get('/launch', function(req, res) {
+  res.redirect('https://www.launch.umd.edu/startupshell');
+});
+
+app.get('/launch/video', function(req, res) {
+  res.redirect('https://www.youtube.com/watch?v=mJu1YzJqdZQ');
+});
+
 // wildcard redirect
 
 app.get('/*', function(req, res) {
