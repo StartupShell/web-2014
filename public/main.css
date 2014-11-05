@@ -83,6 +83,7 @@ section {
 
 /* Navbar */
 .navbar {
+  text-transform: lowercase;
   z-index: 15;
   min-height: 60px;
   border-radius: 0;
@@ -119,8 +120,7 @@ section {
     float: right; }
     .navbar .navbar-nav li a {
       color: #fff;
-      padding: 20px;
-      text-transform: lowercase; }
+      padding: 20px; }
       .navbar .navbar-nav li a:hover {
         color: #e8d6d5;
         background: none; }
@@ -174,14 +174,14 @@ ul.navbar-nav:hover {
     text-align: center;
     width: 100%; }
     #mast .video-txt h1 {
-      font-size: 6vw;
+      font-size: 5vw;
       font-weight: 700;
       text-transform: uppercase;
       margin: 0 -200px -30px;
       text-align: center; }
     #mast .video-txt .callout {
       color: #fff;
-      font-size: 2em;
+      font-size: 1.5em;
       text-align: center; }
     #mast .video-txt img {
       width: 70px;
