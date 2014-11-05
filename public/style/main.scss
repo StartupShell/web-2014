@@ -231,14 +231,14 @@ ul.navbar-nav {
 
 #ventures {
     .venture {
+        padding: {
+            top: 15px;
+            bottom: 15px;
+        }
         img {
             max-width:100%;
             height:auto;
             text-align:center;
-            padding: {
-                top: 15px;
-                bottom: 15px;
-            }
             &:hover {
                 opacity: 0.8;
             }
