@@ -169,6 +169,15 @@ ul.navbar-nav {
     position: relative;
     padding: 0;
     margin: 0;
+    background: $primary-color;
+    &.banner {
+        height:300px;
+        p {
+            margin: {
+                top: 50px;
+            }
+        }
+    }
     #mast_inner-1 {
         overflow: hidden;
         background: url("./images/timelapse.jpg") no-repeat;
@@ -199,7 +208,7 @@ ul.navbar-nav {
         z-index: 15;
         color: #fff;
         position: absolute;
-        top: 50%;
+        top: 55%;
         @include transform (translateY(-50%));
         text-align: center;
         width: 100%;
@@ -280,6 +289,28 @@ ul.navbar-nav {
         }
     }
 }
+/* Participants */
+#participants {
+    .participant {
+        margin: {
+            top: 10px;
+            bottom: 30px;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+/* Schedule */
+#schedule {
+  table {
+    td {
+      padding: 5px;
+    }
+  }
+}
+
 /* Footer */
 
 footer {

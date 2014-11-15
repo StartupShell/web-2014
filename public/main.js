@@ -22,9 +22,11 @@ $(document).ready(function() {
 function resizeDiv() {
     //vpw = $(window).width() - 105;
     vph = $('#mast video').height() - 25;
-    $('#mast').css({
-        'height': vph + 'px'
-    });
+    if ($('#mast video').length) {
+      $('#mast').css({
+          'height': vph + 'px'
+      });
+    }
 }
 
 $(window).load(function() {
