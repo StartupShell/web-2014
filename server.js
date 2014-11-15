@@ -40,9 +40,9 @@ app.get('/apply', function(req, res) {
 
 // redirect demo day
 
-// app.get('/demoday', function(req, res) {
-//   res.redirect('https://shelldemo.eventbrite.com');
-// });
+app.get('/demoday', function(req, res) {
+  res.redirect('http://startupshell.org/demoday.html');
+});
 
 // redirect launch umd
 
