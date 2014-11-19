@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700);
 @import 'mixins';
 $primary-color:#d84136;
-$primary-color-light:lighten($primary-color,10%);
+$primary-color-light:lighten($primary-color,15%);
 $text-color:#666;
 $white:#fff;
 $font:"Titillium Web", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -309,10 +309,6 @@ ul.navbar-nav {
       padding: 5px;
     }
   }
-}
-
-#contentpub {
-    margin: 0;
 }
 
 /* Footer */

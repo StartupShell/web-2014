@@ -24,7 +24,7 @@ a {
   color: #d84136; }
   a:hover {
     text-decoration: none;
-    color: #e06961; }
+    color: #e47e76; }
 
 .btn {
   margin: 10px 15px 10px 0;
@@ -48,7 +48,7 @@ a {
     box-shadow: none;
     outline: none; }
   .btn-default:hover {
-    background: #e06961;
+    background: #e47e76;
     color: #fff; }
 
 .btn-inverse {
@@ -240,9 +240,6 @@ ul.navbar-nav:hover {
 /* Schedule */
 #schedule table td {
   padding: 5px; }
-
-#contentpub {
-  margin: 0; }
 
 /* Footer */
 footer {
