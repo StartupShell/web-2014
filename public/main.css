@@ -135,12 +135,24 @@ ul.navbar-nav:hover {
 #mast {
   height: 680px;
   background-repeat: no-repeat;
-  @inclue background-size(cover);
+  background-size: cover;
   overflow: hidden;
   position: relative;
   padding: 0;
   margin: 0;
-  background: #d84136; }
+  background-color: #d84136; }
+  #mast.overlay:after {
+    background-image: url("./images/demoday-overlay.svg");
+    display: block;
+    background-position: center center;
+    background-size: 130%;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.05; }
   #mast.banner {
     height: 300px; }
     #mast.banner p {
