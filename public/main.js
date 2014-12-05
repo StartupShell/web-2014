@@ -63,7 +63,6 @@ $(function() {
 //     // Get list of upcoming iCal events formatted in JSON
 //     // Old URL :http://www.google.com/calendar/feeds/7qvrobfs0js5799ebugodgc5go%40group.calendar.google.com/public/full?orderby=starttime&sortorder=ascending&futureevents=true&max-results=4&alt=json
 //     jQuery.getJSON("https://www.googleapis.com/calendar/v3/calendars/7qvrobfs0js5799ebugodgc5go@group.calendar.google.com/events?key=AIzaSyDd9bnLFkG8tyRgmjttiFRTT0MTtYpkZb8&orderby=starttime&sortorder=ascending&futureevents=true&max-results=4", function(data){
-//       var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
 //       // Utility method to pad a string on the left
 //       // Source: http://sajjadhossain.com/2008/10/31/javascript-string-trimming-and-padding/
 //       // function lpad(str, pad_string, length) {
@@ -122,29 +121,23 @@ $('#mc-form').ajaxChimp({
 
 
 
-
-
-
-
-
 // calendar stuff -- multiline
+
 
 // this is to template the data for the dom
 function assembleStructure(data) {
-  return [  '<a href=', data.link, '><div class="events-holder">',
-            '<p class="events-title">', data.title, '</p>',
-            '<p class="events-desc">', data.desc, '</p>',
-            '<p class="events-timing">',
-            'Starts at ',
+  var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+  var d = new Date(data.start);
+  var startString = months[d.getMonth()] + ' ' + d.getDay() + ', ' + d.getFullYear();
+  return [  '<div class="event">',
+            '<a href=', data.link, '><h3>', data.title, '</h3></a>',
+            '<p>',
             '<span class="events-start">',
-            data.start,
+            startString,
             '</span>',
-            'ends at',
-            '<span class="events-end">',
-            data.end,
-            '</span> ',
             '</p>',
-            '</div></a>'].join('');
+            '<p>', data.desc, '</p>',
+            '</div>'].join('');
 }
 
 // this is where to get the data from
