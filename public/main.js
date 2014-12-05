@@ -105,8 +105,6 @@ jQuery(function(){
         // if(d.getHours() != 0 || d.getMinutes() != 0) {
         //   d_string = d_string + ', ' + tConvert(lpad(d.getHours(), '0', 2) + ':' + lpad(d.getMinutes(), '0', 2));
         // };
-
-        alert(item[1]);
         // // Render the event
         // jQuery("#events .event").last().before(
         //   "<div class='event'><h3>"
