@@ -64,12 +64,29 @@ $('#mc-form').ajaxChimp({
 
 // calendar stuff -- multiline
 
+// format time
+function timeFormat(dateInput) {
+  var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+  
+  var date = [ months[dateInput.getMonth()], dateInput.getDate()];
+  var time = [ dateInput.getHours(), dateInput.getMinutes()];
+  var suffix = ( time[0] < 12 ) ? "AM" : "PM";
+  time[0] = ( time[0] < 12 ) ? time[0] : time[0] - 12;
+  time[0] = time[0] || 12;
+  for ( var i = 1; i < 3; i++ ) {
+    if ( time[i] < 10 ) {
+      time[i] = "0" + time[i];
+    }
+  }
+ 
+  // Return the formatted string
+  return date.join(" ") + " at " + time.join(":") + " " + suffix;
+}
 
 // this is to template the data for the dom
 function assembleStructure(data) {
-  var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
   var d = new Date(data.start);
-  var startString = months[d.getMonth()] + ' ' + d.getDay() + ', ' + d.getFullYear();
+  var startString = timeFormat(d);
   return [  '<div class="event">',
             '<a href=', data.link, '><h3>', data.title, '</h3></a>',
             '<p>',
@@ -109,6 +126,8 @@ $.ajax({url: url}).done(function(data) {
       .filter(function(i) {
         return i.end.getTime() >= new Date().getTime();
       })
+
+      .reverse()
 
       // append to DOM
       .forEach(function(i) {
