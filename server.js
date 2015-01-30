@@ -38,11 +38,23 @@ app.get('/apply', function(req, res) {
   res.redirect('https://docs.google.com/forms/d/14qk71AGmVgy7VXs1x9sUbM3NptFhC9US8ei3FqwTUaU/viewform');
 });
 
+// redirect open house
+
+app.get('/openhouse', function(req, res) {
+  res.redirect('https://www.facebook.com/events/1407933469506082/');
+});
+
+// redirect map
+
+app.get('/map', function(req, res) {
+  res.redirect('http://ter.ps/shellmap');
+});
+
 // redirect demo day
 
-app.get('/demoday', function(req, res) {
-  res.redirect('http://startupshell.org/demoday.html');
-});
+// app.get('/demoday', function(req, res) {
+//   res.redirect('http://startupshell.org/demoday.html');
+// });
 
 // redirect launch umd
 
