@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="./images/logo.svg"/>
+    <meta property="og:image" content="./images/logo.svg" />
     <link rel="icon" href="./images/favicon.ico">
 
     <title>Startup Shell</title>
@@ -33,7 +33,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://startupshell.org" />
     <meta property="og:image" content="http://startupshell.org/logo-full.png" />
-    <meta property="og:description" content="Startup Shell is a student-run nonprofit incubator that fosters entrepreneurship through collaboration at the University of Maryland." /> 
+    <meta property="og:description" content="Startup Shell is a student-run nonprofit incubator that fosters entrepreneurship through collaboration at the University of Maryland." />
     <meta property="og:site_name" content="Startup Shell" />
 
 </head>
@@ -63,7 +63,8 @@
                     </li>
                     <li><a href="#events">Events</a>
                     </li>
-                    <li><a href="mailto:hello@startupshell.org">Contact</a></li>
+                    <li><a href="mailto:hello@startupshell.org">Contact</a>
+                    </li>
                     <li><a href="http://startupshell.org/apply">Apply</a>
                     </li>
                 </ul>
@@ -78,9 +79,9 @@
                 <div class="overlay"></div>
                 <video autoplay loop preload="auto" poster="./images/timelapse.jpg">
                     <source src="./images/timelapse.webm" type="video/webm">
-                    <source src="./images/timelapse.mp4" type="video/mp4">
-                    <source src="./images/timelapse.ogv" type="video/ogv">
-                    <img src="./images/timelapse.jpg"/>
+                        <source src="./images/timelapse.mp4" type="video/mp4">
+                            <source src="./images/timelapse.ogv" type="video/ogv">
+                                <img src="./images/timelapse.jpg" />
                 </video>
             </div>
         </div>
@@ -89,7 +90,7 @@
                 <h1>Build Something Great.</h1>
                 <section class="row callout hidden-xs">
                     <div class="col-xs-12 col-md-8 col-md-offset-2">
-                        <p>Startup Shell is a student-run  incubator + coworking space at the University of Maryland. We foster entrepreneurship through collaboration.</p>
+                        <p>Startup Shell is a student-run incubator + coworking space at the University of Maryland. We foster entrepreneurship through collaboration.</p>
                         <a href="#about">
                             <button class="btn btn-primary" href="#" role="button">Learn more</button>
                         </a>
@@ -291,8 +292,10 @@
             <div class="col-sm-6" id="events">
                 <h2>Events</h2>
                 <div class="events">
-                    
+
                 </div>
+                <div id="loadMore">Load more</div>
+                <div id="showLess">Show less</div>
                 <a href="http://startupshell.org/talks">
                     <button class="btn btn-default" href="#" role="button">Give A Shell Talk</button>
                 </a>
@@ -313,7 +316,9 @@
                     <li>Meeting space in conference room.</li>
                 </ul>
                 <p>Applications are reviewed at the beginning of each semester. As much as we would like to accept everyone, our space and resources are limited. Last semster, we received over 100 applications of which we were able to accept about 25 new members.</p>
-                <a href="http://startupshell.org/apply" target="_blank"><button class="btn btn-default">Apply</button></a>
+                <a href="http://startupshell.org/apply" target="_blank">
+                    <button class="btn btn-default">Apply</button>
+                </a>
                 <!-- <p class="no-apply">Our applications for the Spring 2014 semester will begin in January.
                     <br />Check back soon!</p> -->
             </div>
@@ -321,22 +326,28 @@
 
         <section class="row" id="sponsors">
             <div class="col-md-2 col-sm-4 col-xs-6 sponsor">
-                <a href="http://namecheap.com" target="_blank"><img src="./images/sponsors/namecheap_logo.png" /></a>
+                <a href="http://namecheap.com" target="_blank"><img src="./images/sponsors/namecheap_logo.png" />
+                </a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6 sponsor">
-                <a href="http://digitalocean.com" target="_blank"><img src="./images/sponsors/digitalocean.png" /></a>
+                <a href="http://digitalocean.com" target="_blank"><img src="./images/sponsors/digitalocean.png" />
+                </a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6 sponsor">
-                <a href="http://www.neelbauerlaw.com/" target="_blank"><img src="./images/sponsors/neelbauer_logo.png" /></a>
+                <a href="http://www.neelbauerlaw.com/" target="_blank"><img src="./images/sponsors/neelbauer_logo.png" />
+                </a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6 sponsor">
-                <a href="http://innovation.umd.edu/" target="_blank"><img src="./images/sponsors/aie_logo.png" /></a>
+                <a href="http://innovation.umd.edu/" target="_blank"><img src="./images/sponsors/aie_logo.png" />
+                </a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6 sponsor">
-                <a href="http://www.eng.umd.edu/" target="_blank"><img src="./images/sponsors/clark_logo.png" /></a>
+                <a href="http://www.eng.umd.edu/" target="_blank"><img src="./images/sponsors/clark_logo.png" />
+                </a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6 sponsor">
-                <a href="http://www.mtech.umd.edu/" target="_blank"><img src="./images/sponsors/mtech_logo.png" /></a>
+                <a href="http://www.mtech.umd.edu/" target="_blank"><img src="./images/sponsors/mtech_logo.png" />
+                </a>
             </div>
         </section>
 
@@ -385,14 +396,20 @@
     <script src="./bower/ajaxchimp/jquery.ajaxchimp.min.js"></script>
     <script src="./main.js"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-43752415-1', 'auto');
-      ga('send', 'pageview');
-
+    ga('create', 'UA-43752415-1', 'auto');
+    ga('send', 'pageview');
     </script>
 </body>
 
