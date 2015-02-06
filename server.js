@@ -35,7 +35,7 @@ app.get('/talks', function(req, res) {
 // redirect calendar
 
 app.get('/calendar', function(req, res) {
-  res.redirect('https://www.google.com/calendar/embed?src=7qvrobfs0js5799ebugodgc5go%40group.calendar.google.com&ctz=America/New_York');
+  res.redirect('http://startupshell.org/calendar.html');
 });
 
 // redirect apply

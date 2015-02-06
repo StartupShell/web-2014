@@ -221,6 +221,11 @@ ul.navbar-nav:hover {
 #events .event a {
   color: inherit; }
 
+/* Calendar */
+#calendar {
+  display: block;
+  margin: 0 auto; }
+
 /* Membership */
 #membership .no-apply {
   margin-top: 30px;
