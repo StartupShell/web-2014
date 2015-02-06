@@ -32,7 +32,7 @@ app.get('/talks', function(req, res) {
   res.redirect('https://docs.google.com/forms/d/1ItpxO38vplZ1nvvy02exZZFWdZUi6Cryeik7GTNP-sM/viewform');
 });
 
-// redirect talks
+// redirect calendar
 
 app.get('/calendar', function(req, res) {
   res.redirect('https://www.google.com/calendar/embed?src=7qvrobfs0js5799ebugodgc5go%40group.calendar.google.com&ctz=America/New_York');
