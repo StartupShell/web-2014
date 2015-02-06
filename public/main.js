@@ -37,6 +37,9 @@ window.onresize = function(event) {
     resizeDiv();
 }
 
+//LOAD MORE EVENTS
+
+
 //SCROLL
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -139,6 +142,9 @@ $.ajax({
     .sort(function(a, b) {
         return new Date(a.start) - new Date(b.start);
     })
+
+    // Slice first three
+    .slice(0, 3)
 
     // append to DOM
     .forEach(function(i) {
